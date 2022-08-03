@@ -13,4 +13,26 @@
       to   { opacity: 1; }
   }
 
+  .shadowBox {
+    border-radius: 50px;
+    background: #151516;
+    box-shadow:  20px 20px 60px #121213,
+                -20px -20px 60px #181819;
+  }
+  
+  body {
+    background: black;
+  }
+
+}
+
+body {
+  overflow-y: scroll; /* For horiz. scroll, otherwise overflow-y: scroll; */
+
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
 }

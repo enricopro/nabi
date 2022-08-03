@@ -6,9 +6,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#121212",
-        secondary: "#ffffff"
+        primary: "#151516", //gray, box background
+        secondary: "#a1a1a6" //text
       }
+    },
+    fontFamily: {
+      sans: ['"Work Sans"'],
     },
   },
   plugins: [],
