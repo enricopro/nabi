@@ -90,7 +90,7 @@ export default function Home() {
   return (
     <>
       <div className="w-screen h-screen bg-black flex justify-center realtive top-0 group">
-        <img className={`h-screen bg-contain ${clicked ? 'blur-none transition-all 2s' : 'blur-sm'}`} src={require("./img/cubit.jpg")} alt="cubit"/>
+        <img className={`h-screen object-cover ${clicked ? 'blur-none transition-all 2s' : 'blur-sm'}`} src={require("./img/cubit.jpg")} alt="cubit"/>
         <BiChevronsDown onClick={() => setClicked(true)} size={30} className={`text-secondary absolute bottom-10 hover:scale-110 transition-all hover:cursor-pointer z-20 ${clicked ? 'opacity-0' : 'opacity-100'}`} />
       </div>
       
