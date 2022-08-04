@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Futura";
+  src: url("./fonts/futura.ttf");
+}
+
 @layer components {
 
   .fadeIn {
@@ -28,7 +33,6 @@
 
 body {
   overflow-y: scroll; /* For horiz. scroll, otherwise overflow-y: scroll; */
-
   -ms-overflow-style: none;
   overflow: -moz-scrollbars-none;
   scrollbar-width: none;

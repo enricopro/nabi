@@ -11,7 +11,7 @@ module.exports = {
       }
     },
     fontFamily: {
-      sans: ['"Work Sans"'],
+      sans: ['Futura', 'sans-serif'],
     },
   },
   plugins: [],

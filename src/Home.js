@@ -2,7 +2,9 @@ import { FaDiscord, FaTwitter } from 'react-icons/fa';
 import { BiChevronsDown } from 'react-icons/bi';
 import React, { useState, useEffect } from 'react';
 import firstp from './img/firstp.jpg';
+import power from './img/power.jpg';
 import waves from './img/waves.jpg';
+
 
 export default function Home() {
 
@@ -36,26 +38,47 @@ export default function Home() {
           <h1 className="text-transparent text-7xl mt-20 font-bold bg-clip-text bg-gradient-to-t from-gray-500 to-indigo-200">Cubit</h1>
           <p className="text-secondary text-2xl mb-[7rem]">this is your personal controlnode</p>
         </div>
-        <div className="w-screen flex flex-row bg-black my-10 px-12 tracking-tighter h-[492px] mx-auto">
-          <div className="flex flex-col items-center w-[490px] bg-primary rounded-3xl p-10 h-full">
-            <h2 className="text-secondary text-3xl font-semibold">What is a <span className="text-slate-300">controlnode</span>?</h2>
-            <br/>
-            <p className="text-secondary text-2xl font-semibold">A controlnode is a single point of control over some parts of your digital life.
-The three pillars of your digital life are your data, your identity and your connections. You can be either aware or unaware, but everyone has at least one controlnode.
-You can own it, or you can rent it - which really means that someone else owns it. <br/><span className="text-slate-300">Cubit is a controlnode.</span></p>
+        <div className="w-11/12 flex flex-col mx-auto mt-10 fadeIn">
+          <div className="w-full flex flex-row bg-black tracking-tighter h-[490px] justify-between items-center">
+            <div className="flex flex-col items-center w-1/2 bg-primary rounded-3xl p-10 h-full mr-5">
+              <h2 className="text-secondary text-3xl font-semibold">What is a <span className="text-slate-300">controlnode</span>?</h2>
+              <br/>
+              <p className="text-secondary text-2xl font-semibold">A controlnode is a single point of control over some parts of your digital life.<br/>
+              The three pillars of your digital life are your data, your identity and your connections.<br/>You can be either aware or unaware, but everyone has at least one controlnode.<br/>You can own it, or you can rent it - which really means that someone else owns it.</p>
+            </div>
+            <div className="bg-cover flex flex-col items-center justify-center w-1/2 rounded-3xl h-full ml-5" style={{backgroundImage: `url(${firstp})`}}>
+              <p className="text-transparent text-7xl font-bold bg-clip-text bg-gradient-to-t from-rose-200 to-rose-300">You are</p>
+              <p className="text-transparent text-7xl font-bold bg-clip-text bg-gradient-to-t from-rose-300 to-rose-400">the only</p>
+              <p className="text-transparent text-7xl font-bold bg-clip-text bg-gradient-to-t from-rose-400 to-rose-500">owner</p>
+            </div>
           </div>
-          <div className="bg-cover flex flex-col items-center justify-center w-[490px] ml-auto rounded-3xl h-full" style={{backgroundImage: `url(${firstp})`}}>
-            <p className="text-transparent text-7xl font-bold bg-clip-text bg-gradient-to-t from-rose-200 to-rose-300">You are</p>
-            <p className="text-transparent text-7xl font-bold bg-clip-text bg-gradient-to-t from-rose-300 to-rose-400">the only</p>
-            <p className="text-transparent text-7xl font-bold bg-clip-text bg-gradient-to-t from-rose-400 to-rose-500">owner</p>
+          <div className="w-full flex flex-row bg-black tracking-tighter h-[490px] justify-between items-center mt-10">
+            <div className="w-1/2 flex flex-row justify-start mx-auto tracking-no rounded-3xl h-full bg-cover tracking-tighter mr-5" style={{backgroundImage: `url(${power})`}}>
+            </div>
+            <div className="flex flex-col items-center w-1/2 bg-primary rounded-3xl p-10 h-full ml-5">
+              <br/>
+              <p className="text-secondary text-2xl font-semibold">Your Google account has a controlnode. Your data, your messages, your interests are all tied, in one way or the other, to this account.<br/>This account is a contract between you and Google.<br/>You can be banned, censored, excluded and used, all withouth crossing the agreement's limits.<br/><br/>cubit is a controlnode that you own</p>
+            </div>
           </div>
-        </div>
-        <div className="w-11/12 flex flex-row justify-between my-10 mx-auto tracking-tighter rounded-3xl h-[492px] bg-cover" style={{backgroundImage: `url(${waves})`}}>
-          <img className="" src={require("./img/power.png")} alt="cubit_power"/>
-          <div className="flex flex-col items-center justify-center w-full h-full">
-            <ul>
-
-            </ul>
+          <div className="w-full flex flex-col mx-auto my-10 fadeIn">
+            <h2 className="text-secondary font-bold text-5xl text-center mb-5">What's <span className="text-white">inside</span>?</h2>
+            <div className="flex flex-row justify-between">
+              <div className="flex flex-col items-center justify-center w-1/6 bg-cover rounded-3xl h-40" style={{backgroundImage: `url(${waves})`}}>
+                <p className="text-secondary text-2xl text-center font-semibold">Network Attached Storage</p>
+              </div>
+              <div className="flex flex-col items-center justify-center w-1/6 bg-primary rounded-3xl h-40">
+              <p className="text-secondary text-2xl text-center font-semibold">ION<br/>Node</p>
+              </div>
+              <div className="flex flex-col items-center justify-center w-1/6 bg-primary rounded-3xl h-40">
+                <p className="text-secondary text-2xl text-center font-semibold">Bitcoin <br/>Full <br/>Node</p>
+              </div>
+              <div className="flex flex-col items-center justify-center w-1/6 bg-primary rounded-3xl h-40">
+                <p className="text-secondary text-2xl text-center font-semibold">Hardware<br/>VPN</p>
+              </div>
+              <div className="flex flex-col items-center justify-center w-1/6 bg-primary rounded-3xl h-40">
+                <p className="text-secondary text-2xl text-center font-semibold">Home Assistant</p>
+              </div>
+            </div>
           </div>
         </div>
       </>
@@ -67,7 +90,7 @@ You can own it, or you can rent it - which really means that someone else owns i
   return (
     <>
       <div className="w-screen h-screen bg-black flex justify-center realtive top-0 group">
-        <img className={`h-screen object-cover ${clicked ? 'blur-none transition-all 2s' : 'blur-sm'}`} src={require("./img/cubit.png")} alt="cubit"/>
+        <img className={`h-screen bg-contain ${clicked ? 'blur-none transition-all 2s' : 'blur-sm'}`} src={require("./img/cubit.jpg")} alt="cubit"/>
         <BiChevronsDown onClick={() => setClicked(true)} size={30} className={`text-secondary absolute bottom-10 hover:scale-110 transition-all hover:cursor-pointer z-20 ${clicked ? 'opacity-0' : 'opacity-100'}`} />
       </div>
       
