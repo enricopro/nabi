@@ -1,7 +1,7 @@
 import { FaDiscord, FaTwitter } from 'react-icons/fa';
 import { BiChevronsDown } from 'react-icons/bi';
 import React, { useState, useEffect } from 'react';
-import firstp from './img/firstp.webp';
+import firstp from './img/firstp.png';
 import macro from './img/macro.jpg';
 import bringithome from './img/bringithome.png';
 import { ReactComponent as Logo } from './img/logo.svg';
@@ -35,8 +35,8 @@ export default function Home() {
           </div>
         </div>
         <div className="h-screen w-screen flex flex-col justify-between items-center absolute top-0 fadeIn tracking-tighter font-semibold">
-          <h1 className="text-transparent text-7xl mt-10 font-bold bg-clip-text bg-gradient-to-t to-gray-500 from-indigo-200">Cubit</h1>
-          <p className="text-secondary text-2xl mb-[4rem]">this is your personal controlnode</p>
+          <h1 className="text-transparent text-7xl mt-10 font-normal bg-clip-text bg-gradient-to-t to-gray-500 from-indigo-200">Cubit</h1>
+          <p className="text-secondary text-2xl mb-[2rem]">this is your personal controlnode</p>
         </div>
         <div className="w-11/12 max-w-[1390px] flex flex-col mx-auto mt-10 fadeIn">
           <div className="w-full flex flex-row bg-black tracking-tighter h-[490px] justify-between items-center">
@@ -44,20 +44,20 @@ export default function Home() {
               <h2 className="text-secondary text-3xl font-semibold">What is a <span className="text-slate-300">controlnode</span>?</h2>
               <br/>
               <p className="text-secondary text-2xl font-semibold px-8">A controlnode is a single point of control over some parts of your digital life.<br/>
-              The three pillars of your digital life are your data, your identity and your connections.<br/>You can be either aware or unaware, but everyone has at least one controlnode.<br/>You can own it, or you can rent it - which really means that someone else owns it.</p>
+              The three pillars of your digital life are your data, your identity and your connections.<br/><br/>You can be either aware or unaware, but everyone has at least one controlnode.<br/><br/>You can own it, or you can rent it - which really means that someone else owns it.</p>
             </div>
             <div className="bg-cover flex flex-col items-center justify-center w-1/2 rounded-3xl h-full ml-5 fadeIn" style={{backgroundImage: `url(${firstp})`}}>
-              <p className="text-transparent text-7xl font-bold bg-clip-text bg-gradient-to-t text-black">Are you</p>
-              <p className="text-transparent text-7xl font-bold bg-clip-text bg-gradient-to-t text-black">the only</p>
-              <p className="text-transparent text-7xl font-bold bg-clip-text bg-gradient-to-t text-black">owner?</p>
+              <p className="text-transparent text-[5rem] leading-tight font-bold bg-clip-text bg-gradient-to-t text-black">Are you</p>
+              <p className="text-transparent text-[5rem] leading-tight font-bold bg-clip-text bg-gradient-to-t text-black">the only</p>
+              <p className="text-transparent text-[5rem] leading-tight font-bold bg-clip-text bg-gradient-to-t text-black">owner?</p>
             </div>
           </div>
           <div className="w-full flex flex-row bg-black tracking-tighter h-[490px] justify-between items-center mt-10">
-            <div className="flex flex-col items-center justify-center w-1/2 bg-primary rounded-3xl p-10 h-full mr-5">
+            <div className="w-1/2 flex flex-row justify-start mx-auto tracking-no rounded-3xl h-full bg-cover tracking-tighter mr-5" style={{backgroundImage: `url(${bringithome})`}} />
+            <div className="flex flex-col items-center justify-center w-1/2 bg-primary rounded-3xl p-10 h-full ml-5">
               <br/>
-              <p className="text-secondary text-2xl font-semibold px-8">Your Google account has a controlnode. Your data, your messages, your interests are all tied, in one way or the other, to this account.<br/>This account is a contract between you and Google.<br/>You can be banned, censored, excluded and used, all withouth crossing the agreement's limits.<br/><br/>cubit is a controlnode that you own</p>
+              <p className="text-secondary text-2xl font-semibold px-8">Your Google account has a controlnode. Your data, your messages, your interests are all tied, in one way or the other, to this account.<br/><br/>This account is a contract between you and Google.<br/>You can be banned, censored, excluded and used, all withouth crossing the agreement's limits.<br/><br/>cubit is a controlnode that you own</p>
             </div>
-            <div className="w-1/2 flex flex-row justify-start mx-auto tracking-no rounded-3xl h-full bg-cover tracking-tighter ml-5" style={{backgroundImage: `url(${bringithome})`}} />
           </div>
           <div className="w-full flex flex-col justify-center items-center mx-auto my-10 bg-primary min-h-[490px] bg-cover rounded-3xl fadeIn" style={{backgroundImage: `url(${macro})`}}>
             <h2 className="text-5xl font-semibold text-secondary pt-7">How cubit will serve you</h2>
@@ -77,6 +77,10 @@ export default function Home() {
                   <p className="opacity-0 peer-hover:opacity-100 transition-all">Help secure the most decentralised blockchain, while eliminating all third parties</p>
                 </div>
                 <div>
+                  <p className="text-2xl font-semibold hover:cursor-pointer my-3 peer transition-all">Password manager</p>
+                  <p className="opacity-0 peer-hover:opacity-100 transition-all">Access all of your password easily and fast, while keeping them secure</p>
+                </div>
+                <div>
                   <p className="text-2xl font-semibold hover:cursor-pointer my-3 peer transition-all">Hardware VPN</p>
                   <p className="opacity-0 peer-hover:opacity-100 transition-all">Achieve a private connection to the World Wide Web</p>
                 </div>
@@ -84,16 +88,16 @@ export default function Home() {
                   <p className="text-2xl font-semibold hover:cursor-pointer my-3 peer transition-all">Home Assistant</p>
                   <p className="opacity-0 peer-hover:opacity-100 transition-all">Automate your Home, while maintaing full control</p>
                 </div>
-                <p className="font-semibold mt-2">and much much more,because it’s truly yours...</p>
+                <p className="text-2xl font-semibold mt-2">and much much more,<br/>because it’s truly yours...</p>
               </div>
             </div>
           </div>
-          <div className="w-full flex flex-row justify-center items-center mx-auto my-10 bg-primary min-h-[100px] rounded-3xl fadeIn">
-            <div className="w-4/5">
-              <p className="text-secondary text-2xl font-semibold p-10">Your Google account has a controlnode. Your data, your messages, your interests are all tied, in one way or the other, to this account.<br/>This account is a contract between you and Google.<br/>You can be banned, censored, excluded and used, all withouth crossing the agreement's limits.<br/><br/>cubit is a controlnode that you own</p>
-            </div>
-            <div className="w-1/5 text-secondary">
+          <div className="w-full flex flex-row justify-center items-center mx-auto mb-10 bg-primary min-h-[100px] rounded-3xl fadeIn">
+            <div className="w-1/5 text-secondary flex items-center justify-center">
               LOGO
+            </div>
+            <div className="w-4/5">
+              <p className="text-secondary text-2xl font-semibold p-10">Your Google account has a controlnode. Your data, your messages, your interests are all tied, in one way or the other, to this account.<br/>This account is a contract between you and Google.<br/>You can be banned, censored, excluded and used, all withouth crossing the agreement's limits.<br/><br/>cubit is a controlnode that you own.</p>
             </div>
           </div>
         </div>
