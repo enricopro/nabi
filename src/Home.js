@@ -102,6 +102,16 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <div className="w-full flex flex-row justify-center items-center mx-auto mb-10 bg-primary min-h-[490px] rounded-3xl fadeIn">
+            <div className="w-2/5 h-full p-10 text-secondary min-h-[590px] flex flex-col justify-between items-center text-center">
+              <p className="text-secondary text-6xl font-semibold">Simply<br/>compact</p>
+              <p className="text-secondary text-6xl font-semibold">Silent</p>
+              <p className="text-secondary text-6xl font-semibold">Fast</p>
+            </div>
+            <div className="w-3/5 h-full">
+              <img className="mt-10" src={require("./img/esploso.png")} alt="components"/>
+            </div>
+          </div>
           <div className="w-full flex flex-row justify-center items-center mx-auto mb-10 bg-primary min-h-[100px] rounded-3xl fadeIn">
             <div className="w-1/5 p-10 text-secondary flex items-center justify-center">
               <img className="" src={require("./img/logo.png")} alt="logo"/>
@@ -129,7 +139,7 @@ export default function Home() {
   return (
     <>
       <div className="w-screen justify-center bg-black flex realtive top-0 group fadeIn">
-        <img className={`md:h-screen w-screen object-cover ${clicked ? 'blur-none transition-all 2s' : 'blur-sm'}`} src={require("./img/cubit2.jpg")} alt="cubit"/>
+        <img className={`md:h-screen w-screen object-cover ${clicked ? 'blur-none transition-all 2s' : 'blur-sm'}`} src={require("./img/cubit.jpg")} alt="cubit"/>
         <BiChevronsDown onClick={() => setClicked(true)} size={30} className={`text-secondary absolute bottom-10 hover:scale-110 transition-all hover:cursor-pointer z-20 ${clicked ? 'opacity-0' : 'opacity-100'}`} />
       </div>
       
