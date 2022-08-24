@@ -69,34 +69,34 @@ export default function Home() {
               <br/>
               <div className="flex flex-col items-start justify-center w-1/2 rounded-3xl p-10 h-full mr-5 text-secondary text-left">
                 <div>
-                  <p className="text-2xl font-semibold my-3 peer transition-all">Network Attached Storage</p>
-                  <p className="opacity-0 peer-hover:opacity-100 transition-all">You data in one secure place, easily accessible at any time</p>
+                  <p className="text-2xl hover:cursor-pointer font-semibold my-3 peer transition-all">Network Attached Storage</p>
+                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100">You data in one secure place, easily accessible at any time</p>
                 </div>
                 <div>
                   <a href="https://identity.foundation/ion/" target="_blank" rel="noreferrer" className="flex flex-row items-center peer hover:cursor-pointer">
                     <p className="text-2xl font-semibold hover:cursor-pointer my-3 peer transition-all">ION Node</p>
                     <FiExternalLink size={22} className="text-secondary ml-2"/>
                   </a>
-                  <p className="opacity-0 peer-hover:opacity-100 transition-all">Identity is an important topic. Do not trust, verify by yourself!</p>
+                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100">Identity is an important topic. Do not trust, verify by yourself!</p>
                 </div>
                 <div>
                   <a href="https://bitcoin.org/en/full-node" target="_blank" rel="noreferrer" className="flex flex-row items-center peer hover:cursor-pointer">
                     <p className="text-2xl font-semibold hover:cursor-pointer my-3 peer transition-all">Bitcoin Full Node</p>
                     <FiExternalLink size={22} className="text-secondary ml-2"/>
                   </a>
-                  <p className="opacity-0 peer-hover:opacity-100 transition-all">Help secure the most decentralised blockchain, while eliminating all third parties.</p>
+                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100">Help secure the most decentralised blockchain, while eliminating all third parties.</p>
                 </div>
                 <div>
                   <p className="text-2xl font-semibold hover:cursor-pointer my-3 peer transition-all">Password manager</p>
-                  <p className="opacity-0 peer-hover:opacity-100 transition-all">Access all of your password easily and fast, while keeping them secure</p>
+                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100">Access all of your password easily and fast, while keeping them secure</p>
                 </div>
                 <div>
                   <p className="text-2xl font-semibold hover:cursor-pointer my-3 peer transition-all">Hardware VPN</p>
-                  <p className="opacity-0 peer-hover:opacity-100 transition-all">Achieve a private connection to the World Wide Web</p>
+                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100">Achieve a private connection to the World Wide Web</p>
                 </div>
                 <div>
                   <p className="text-2xl font-semibold hover:cursor-pointer my-3 peer transition-all">Home Assistant</p>
-                  <p className="opacity-0 peer-hover:opacity-100 transition-all">Automate your Home, while maintaing full control</p>
+                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100">Automate your Home, while maintaing full control</p>
                 </div>
                 <p className="text-2xl font-semibold mt-2">and much much more,<br/>because it’s truly yours...</p>
               </div>
@@ -128,7 +128,7 @@ export default function Home() {
         <div className="w-full flex flex-col py-8 first-letter:justify-center bg-primary items-center mx-auto min-h-[100px] fadeIn">
           <p className="text-secondary">Renders made by <a href="https://www.instagram.com/_matteocorra/" className="underline">Permeteo</a>.</p>
           <p className="text-secondary">Logo made by <a href="https://www.instagram.com/radiciannodate/" className="underline">Anna</a>.</p>
-          <p className="text-secondary">With ❤️ from 🇮🇹</p>
+          <p className="text-secondary">Nabi Technology</p>
         </div>
       </>
     } else {
