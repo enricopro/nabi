@@ -57,7 +57,7 @@ export default function Home() {
             </div>
           </div>
           <div className="w-full flex flex-row bg-black tracking-tighter h-[490px] justify-between items-center mt-10">
-            <div className="w-1/2 flex flex-row justify-start mx-auto tracking-no rounded-3xl h-full bg-cover tracking-tighter mr-5" style={{backgroundImage: `url(${bringithome})`}} />
+            <div className="w-1/2 flex flex-row justify-start mx-auto tracking-no rounded-3xl h-full bg-cover bg-right bg tracking-tighter mr-5" style={{backgroundImage: `url(${bringithome})`}} />
             <div className="flex flex-col items-center justify-center w-1/2 bg-primary rounded-3xl p-10 h-full ml-5">
               <br/>
               <p className="text-secondary text-2xl font-semibold px-8">Your Google account has a controlnode. Your data, your messages, your interests are all tied, in one way or the other, to this account.<br/><br/>This account is a contract between you and Google.<br/>You can be banned, censored, excluded and used, all withouth crossing the agreement's limits.<br/><br/>cubit is a controlnode that you own</p>
@@ -110,14 +110,14 @@ export default function Home() {
               <p className="text-secondary text-2xl font-semibold p-10">nabi is an early project with a simple Mission. Build a new Internet where the induvidual is at the core, not at the perifery. Where technology is a tool for people, not the end goal. Where we can all experience freedom, true freedom.</p>
             </div>
           </div>
-          <div className="w-full flex flex-row justify-between items-center mx-auto mb-10 min-h-[50px] rounded-3xl fadeIn">
-            <Link to="discover" className="text-secondary bg-primary font-bold p-5 rounded-3xl hover:bg-gray-900 transition-all">Discover our vision</Link>
-            <a href="https://discord.gg/Kv7hyVFs" className="p-5 bg-[#5865F2] rounded-3xl hover:bg-blue-500 text-white font-bold transition-all">Lear more on Discord</a>
+          <div className="w-full flex flex-row justify-center items-center mx-auto mb-10 min-h-[50px] rounded-3xl fadeIn">
+            <Link to="discover" className="text-secondary bg-primary font-bold p-5 mr-5 rounded-3xl hover:bg-gray-900 transition-all">Discover our vision</Link>
+            <a href="https://discord.gg/Kv7hyVFs" className="p-5 bg-[#5865F2] ml-5 rounded-3xl hover:bg-blue-500 text-white font-bold transition-all">Lear more on Discord</a>
           </div>
         </div>
         <div className="w-full flex flex-col py-8 first-letter:justify-center bg-primary items-center mx-auto min-h-[100px] fadeIn">
-          <p className="text-secondary">Renders made by Permeteo.</p>
-          <p className="text-secondary">Logo made by Anna.</p>
+          <p className="text-secondary">Renders made by <a href="https://www.instagram.com/_matteocorra/" className="underline">Permeteo</a>.</p>
+          <p className="text-secondary">Logo made by <a href="https://www.instagram.com/radiciannodate/" className="underline">Anna</a>.</p>
           <p className="text-secondary">With ❤️ from 🇮🇹</p>
         </div>
       </>
@@ -129,7 +129,7 @@ export default function Home() {
   return (
     <>
       <div className="w-screen justify-center bg-black flex realtive top-0 group fadeIn">
-        <img className={` w-screen object-cover ${clicked ? 'blur-none transition-all 2s' : 'blur-sm'}`} src={require("./img/cubit2.jpg")} alt="cubit"/>
+        <img className={`md:h-screen w-screen object-cover ${clicked ? 'blur-none transition-all 2s' : 'blur-sm'}`} src={require("./img/cubit2.jpg")} alt="cubit"/>
         <BiChevronsDown onClick={() => setClicked(true)} size={30} className={`text-secondary absolute bottom-10 hover:scale-110 transition-all hover:cursor-pointer z-20 ${clicked ? 'opacity-0' : 'opacity-100'}`} />
       </div>
       
