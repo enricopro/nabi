@@ -33,7 +33,7 @@ export default function Home() {
             <a href="https://discord.gg/Kv7hyVFs" className="z-10">
               <FaDiscord size={22} className="text-secondary mx-2 hover:text-gray-300 transition-all"/>
             </a>
-            <a href="https://discord.gg/Kv7hyVFs" className="z-10">
+            <a href="https://twitter.com/nabi_technology" className="z-10">
               <FaTwitter size={22} className="text-secondary mx-2 hover:text-gray-300 transition-all"/>
             </a>
           </div>
@@ -102,14 +102,19 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="w-full flex flex-row justify-center items-center mx-auto mb-10 bg-primary min-h-[490px] rounded-3xl fadeIn">
-            <div className="w-2/5 h-full p-10 text-secondary min-h-[590px] flex flex-col justify-between items-center text-center">
-              <p className="text-secondary text-6xl font-semibold">Simply<br/>compact</p>
-              <p className="text-secondary text-6xl font-semibold">Silent</p>
-              <p className="text-secondary text-6xl font-semibold">Fast</p>
-            </div>
-            <div className="w-3/5 h-full">
-              <img className="mt-10" src={require("./img/esploso.png")} alt="components"/>
+          <div className="w-full flex flex-col justify-center items-center mx-auto mb-10 bg-primary min-h-[490px] rounded-3xl fadeIn">
+            <div className="flex flex-col justify-center items-center">
+              <div className="text-[4rem] font-semibold text-secondary pt-7">What's inside</div>
+              <div className="flex flex-row justify-center items-center">
+                <div className="w-2/5 h-full p-10 text-secondary min-h-[590px] flex flex-col justify-between items-center text-center">
+                  <p className="text-secondary text-6xl font-semibold">Simply<br/>compact</p>
+                  <p className="text-secondary text-6xl font-semibold">Silent</p>
+                  <p className="text-secondary text-6xl font-semibold">Fast</p>
+                </div>
+                <div className="w-3/5 h-full">
+                  <img className="mt-10" src={require("./img/esploso.png")} alt="components"/>
+                </div>
+              </div>
             </div>
           </div>
           <div className="w-full flex flex-row justify-center items-center mx-auto mb-10 bg-primary min-h-[100px] rounded-3xl fadeIn">
@@ -117,7 +122,7 @@ export default function Home() {
               <img className="" src={require("./img/logo.png")} alt="logo"/>
             </div>
             <div className="w-4/5">
-              <p className="text-secondary text-2xl font-semibold p-10">nabi is an early project with a simple Mission. Build a new Internet where the induvidual is at the core, not at the perifery. Where technology is a tool for people, not the end goal. Where we can all experience freedom, true freedom.</p>
+              <p className="text-secondary text-2xl font-semibold p-10">nabi is an early project with a simple Mission. Help build the Internet of peers, where the induvidual is at the core, not at the perifery. Where technology is a tool for people, not the end goal. Where we can all experience freedom, true freedom.</p>
             </div>
           </div>
           <div className="w-full flex flex-row justify-center items-center mx-auto mb-10 min-h-[50px] rounded-3xl fadeIn">
