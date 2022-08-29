@@ -13,6 +13,11 @@ module.exports = {
     fontFamily: {
       sans: ['Futura', 'sans-serif'],
     },
+    screens: {
+      'md': {'max': '1023px'},
+      // => @media (max-width: 1023px) { ... }
+    },
+
   },
   plugins: [],
 }
