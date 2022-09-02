@@ -145,7 +145,7 @@ export default function Home() {
     <>
       <div className="w-screen justify-center bg-black flex realtive top-0 group fadeIn">
         <img className={`md:h-screen w-screen object-cover ${clicked ? 'blur-none transition-all 2s' : 'blur-sm'}`} src={require("./img/cubit.jpg")} alt="cubit"/>
-        <BiChevronsDown onClick={() => setClicked(true)} size={30} className={`text-secondary absolute bottom-10 hover:scale-110 transition-all hover:cursor-pointer z-20 ${clicked ? 'opacity-0' : 'opacity-100'}`} />
+        <BiChevronsDown onClick={() => setClicked(true)} size={30} className={`text-secondary absolute bottom-10 hover:scale-110 transition-all hover:cursor-pointer animate-bounce z-20 ${clicked ? 'opacity-0' : 'opacity-100'}`} />
       </div>
       
       {renderWebsite()}
