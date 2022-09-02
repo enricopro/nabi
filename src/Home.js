@@ -3,7 +3,7 @@ import { BiChevronsDown } from 'react-icons/bi';
 import { FiExternalLink } from 'react-icons/fi'
 import React, { useState, useEffect } from 'react';
 import firstp from './img/firstp.png';
-import macro from './img/macro.gif';
+import macro from './img/macro.jpg';
 import bringithome from './img/bringithome.jpg';
 import { Link } from "react-router-dom";
 
@@ -40,7 +40,7 @@ export default function Home() {
         </div>
         <div className="h-screen w-screen flex flex-col justify-between items-center absolute top-0 fadeIn tracking-tighter font-semibold">
           <h1 className="text-transparent text-7xl mt-10 md:mt-20 font-normal bg-clip-text bg-gradient-to-t to-gray-500 from-indigo-200 tracking-tight">Cubit</h1>
-          <p className="text-secondary text-3xl mb-[2rem]">your personal controlnode</p>
+          <p className="text-secondary text-3xl mb-[2rem] md:mb-20">your personal controlnode</p>
         </div>
         <div className="w-11/12 max-w-[1390px] flex flex-col mx-auto mt-10 md:mt-20 fadeIn">
           <div className="w-full flex flex-row md:flex-col bg-black tracking-tighter h-[560px] md:h-auto justify-between md:justify-center items-center">
@@ -50,59 +50,59 @@ export default function Home() {
               <p className="text-secondary text-2xl font-semibold px-8">A controlnode is a single point of control over some parts of your digital life.<br/>
               The three pillars of your digital life are your data, your identity and your connections.<br/><br/>You can be either aware or unaware, but everyone has at least one controlnode.<br/><br/>You can own it, or you can rent it - which really means that someone else owns it.</p>
             </div>
-            <div className="bg-cover flex flex-col items-center justify-center w-1/2 md:w-full rounded-3xl h-full ml-5 md:ml-auto md:mt-5 md:p-8 md:text-center fadeIn" style={{backgroundImage: `url(${firstp})`}}>
+            <div className="bg-cover flex flex-col items-center justify-center w-1/2 md:w-full rounded-3xl h-full ml-5 md:hidden fadeIn" style={{backgroundImage: `url(${firstp})`}}>
               <p className="text-transparent text-[5rem] leading-tight font-bold bg-clip-text bg-gradient-to-t text-black">Are you</p>
               <p className="text-transparent text-[5rem] leading-tight font-bold bg-clip-text bg-gradient-to-t text-black">the only</p>
               <p className="text-transparent text-[5rem] leading-tight font-bold bg-clip-text bg-gradient-to-t text-black">owner?</p>
             </div>
           </div>
-          <div className="w-full flex flex-row md:flex-col bg-black tracking-tighter h-[490px] md:h-auto justify-between md:justify-center items-center mt-10">
-            <div className="w-1/2 flex flex-row justify-start mx-auto tracking-no rounded-3xl h-full bg-cover bg-right bg tracking-tighter mr-5 md:mr-auto" style={{backgroundImage: `url(${bringithome})`}} />
+          <div className="w-full flex flex-row md:flex-col bg-black tracking-tighter h-[490px] md:h-auto justify-between md:justify-center items-center mt-10 md:mt-5">
+            <div className="w-1/2 md:w-full flex flex-row justify-start mx-auto tracking-no rounded-3xl h-[490px] bg-cover bg-right bg tracking-tighter mr-5 md:mr-0 md:mb-5" style={{backgroundImage: `url(${bringithome})`}} />
             <div className="flex flex-col items-center justify-center w-1/2 md:w-auto bg-primary rounded-3xl p-10 md:p-8 md:py-2 h-full md:h-auto ml-5 md:ml-auto">
               <br/>
               <p className="text-secondary text-2xl font-semibold px-8 md:p-2">Your Google account has a controlnode. Your data, your messages, your interests are all tied, in one way or the other, to this account.<br/><br/>This account is a contract between you and Google.<br/>You can be banned, censored, excluded and used, all withouth crossing the agreement's limits.<br/><br/>cubit is a controlnode that you own</p>
             </div>
           </div>
           <div className="w-full flex flex-col justify-center items-center mx-auto my-10 md:my-5 bg-primary min-h-[490px] bg-cover rounded-3xl fadeIn" style={{backgroundImage: `url(${macro})`}}>
-            <h2 className="text-[4rem] font-semibold text-secondary pt-7 mb-5 md:mb-0 md:text-center">How cubit will serve you</h2>
-            <div className="w-full flex flex-col justify-end items-end md:items-center mx-auto">
+            <h2 className="text-[4rem] font-semibold text-secondary pt-7 mb-5 md:mb-0 md:text-center md:text-5xl">How cubit will serve you</h2>
+            <div className="w-full flex flex-col justify-end items-end mx-auto">
               <br/>
-              <div className="flex flex-col items-start justify-center w-1/2 md:w-full rounded-3xl p-10 h-full mr-5 text-secondary text-left">
+              <div className="flex flex-col items-start justify-center w-1/2 md:w-full rounded-3xl p-10 md:p-0 md:pb-10 h-full mr-5 md:mr-0 md:pl-10 text-secondary md:pt-2">
                 <div>
                   <p className="text-2xl hover:cursor-pointer font-semibold my-3 peer transition-all">Network Attached Storage</p>
-                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 md:opacity-100">You data in one secure place, easily accessible at any time</p>
+                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 md:hidden">Your data in one secure place, easily accessible at any time</p>
                 </div>
                 <div>
                   <a href="https://identity.foundation/ion/" target="_blank" rel="noreferrer" className="flex flex-row items-center peer hover:cursor-pointer">
                     <p className="text-2xl font-semibold hover:cursor-pointer my-3 peer transition-all">ION Node</p>
                     <FiExternalLink size={22} className="text-secondary ml-2"/>
                   </a>
-                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 md:opacity-100">Identity is an important topic. Do not trust, verify by yourself!</p>
+                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 md:hidden">Identity is an important topic. Do not trust, verify by yourself!</p>
                 </div>
                 <div>
                   <a href="https://bitcoin.org/en/full-node" target="_blank" rel="noreferrer" className="flex flex-row items-center peer hover:cursor-pointer">
                     <p className="text-2xl font-semibold hover:cursor-pointer my-3 peer transition-all">Bitcoin Full Node</p>
                     <FiExternalLink size={22} className="text-secondary ml-2"/>
                   </a>
-                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 md:opacity-100">Help secure the most decentralised blockchain, while eliminating all third parties.</p>
+                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 md:hidden">Help secure the most decentralised blockchain, while eliminating all third parties.</p>
                 </div>
                 <div>
                   <p className="text-2xl font-semibold hover:cursor-pointer my-3 peer transition-all">Password manager</p>
-                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 md:opacity-100">Access all of your password easily and fast, while keeping them secure</p>
+                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 md:hidden">Access all of your password easily and fast, while keeping them secure</p>
                 </div>
                 <div>
                   <p className="text-2xl font-semibold hover:cursor-pointer my-3 peer transition-all">Hardware VPN</p>
-                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 md:opacity-100">Achieve a private connection to the World Wide Web</p>
+                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 md:hidden">Achieve a private connection to the World Wide Web</p>
                 </div>
                 <div>
                   <p className="text-2xl font-semibold hover:cursor-pointer my-3 peer transition-all">Home Assistant</p>
-                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 md:opacity-100">Automate your Home, while maintaing full control</p>
+                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 md:hidden">Automate your Home, while maintaing full control</p>
                 </div>
                 <p className="text-2xl font-semibold mt-2">and much much more,<br/>because it’s truly yours...</p>
               </div>
             </div>
           </div>
-          <div className="w-full flex flex-col justify-center items-center mx-auto mb-10 bg-primary min-h-[490px] rounded-3xl fadeIn">
+          <div className="w-full flex flex-col justify-center items-center mx-auto mb-10 md:mb-5 bg-primary min-h-[490px] rounded-3xl fadeIn">
             <div className="flex flex-col justify-center items-center">
               <div className="text-[4rem] md:text-5xl font-semibold text-secondary pt-7 md:text-center">What's inside</div>
               <div className="flex flex-row justify-center items-center">
