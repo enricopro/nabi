@@ -40,7 +40,7 @@ export default function Home() {
         </div>
         <div className="h-screen w-screen flex flex-col justify-between items-center absolute top-0 fadeIn tracking-tighter font-semibold">
           <h1 className="text-transparent text-7xl mt-10 md:mt-20 font-normal bg-clip-text bg-gradient-to-t to-gray-500 from-indigo-200 tracking-tight">Cubit</h1>
-          <p className="text-secondary text-3xl mb-[2rem] md:mb-20">your personal controlnode</p>
+          <p className="text-secondary text-3xl mb-[2rem] md:mb-20 md:text-center">your personal<br className="hidden md:block"/>controlnode</p>
         </div>
         <div className="w-11/12 max-w-[1390px] flex flex-col mx-auto mt-10 md:mt-20 fadeIn">
           <div className="w-full flex flex-row md:flex-col bg-black tracking-tighter h-[560px] md:h-auto justify-between md:justify-center items-center">
@@ -57,7 +57,7 @@ export default function Home() {
             </div>
           </div>
           <div className="w-full flex flex-row md:flex-col bg-black tracking-tighter h-[490px] md:h-auto justify-between md:justify-center items-center mt-10 md:mt-5">
-            <div className="w-1/2 md:w-full flex flex-row justify-start mx-auto tracking-no rounded-3xl h-[490px] bg-cover bg-right bg tracking-tighter mr-5 md:mr-0 md:mb-5" style={{backgroundImage: `url(${bringithome})`}} />
+            <div className="w-1/2 md:w-full flex flex-row justify-start mx-auto tracking-no rounded-3xl h-[490px] bg-cover bg-right md:bg-center bg tracking-tighter mr-5 md:mr-0 md:mb-5" style={{backgroundImage: `url(${bringithome})`}} />
             <div className="flex flex-col items-center justify-center w-1/2 md:w-auto bg-primary rounded-3xl p-10 md:p-8 md:py-2 h-full md:h-auto ml-5 md:ml-auto">
               <br/>
               <p className="text-secondary text-2xl font-semibold px-8 md:p-2">Your Google account has a controlnode. Your data, your messages, your interests are all tied, in one way or the other, to this account.<br/><br/>This account is a contract between you and Google.<br/>You can be banned, censored, excluded and used, all withouth crossing the agreement's limits.<br/><br/>cubit is a controlnode that you own</p>
@@ -146,7 +146,7 @@ export default function Home() {
             <div className="flex flex-col justify-center items-center">
               <div className="text-[4rem] md:text-5xl font-semibold text-secondary pt-7 md:text-center">What's inside</div>
               <div className="flex flex-row justify-center items-center">
-                <div className="w-2/5 h-full p-10 text-secondary min-h-[590px] flex flex-col justify-between items-center text-center md:hidden">
+                <div className="w-2/5 h-full p-10 text-secondary min-h-[850px] flex flex-col justify-between items-center text-center md:hidden">
                   <p className="text-secondary text-6xl font-semibold">Simply<br/>compact</p>
                   <p className="text-secondary text-6xl font-semibold">Silent</p>
                   <p className="text-secondary text-6xl font-semibold">Fast</p>
