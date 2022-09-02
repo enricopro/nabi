@@ -63,7 +63,47 @@ export default function Home() {
               <p className="text-secondary text-2xl font-semibold px-8 md:p-2">Your Google account has a controlnode. Your data, your messages, your interests are all tied, in one way or the other, to this account.<br/><br/>This account is a contract between you and Google.<br/>You can be banned, censored, excluded and used, all withouth crossing the agreement's limits.<br/><br/>cubit is a controlnode that you own</p>
             </div>
           </div>
-          <div className="w-full flex flex-col justify-center items-center mx-auto my-10 md:my-5 bg-primary min-h-[490px] bg-cover rounded-3xl fadeIn" style={{backgroundImage: `url(${macro})`}}>
+          <div className="w-full flex flex-col justify-center items-center mx-auto my-10 md:my-5 bg-primary min-h-[490px] bg-cover rounded-3xl fadeIn md:hidden" style={{backgroundImage: `url(${macro})`}}>
+            <h2 className="text-[4rem] font-semibold text-secondary pt-7 mb-5 md:mb-0 md:text-center md:text-5xl">How cubit will serve you</h2>
+            <div className="w-full flex flex-col justify-end items-end mx-auto">
+              <br/>
+              <div className="flex flex-col items-start justify-center w-1/2 md:w-full rounded-3xl p-10 md:p-0 md:pb-10 h-full mr-5 md:mr-0 md:pl-10 text-secondary md:pt-2">
+                <div>
+                  <p className="text-2xl hover:cursor-pointer font-semibold my-3 peer transition-all">Network Attached Storage</p>
+                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 md:hidden">Your data in one secure place, easily accessible at any time</p>
+                </div>
+                <div>
+                  <a href="https://identity.foundation/ion/" target="_blank" rel="noreferrer" className="flex flex-row items-center peer hover:cursor-pointer">
+                    <p className="text-2xl font-semibold hover:cursor-pointer my-3 peer transition-all">ION Node</p>
+                    <FiExternalLink size={22} className="text-secondary ml-2"/>
+                  </a>
+                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 md:hidden">Identity is an important topic. Do not trust, verify by yourself!</p>
+                </div>
+                <div>
+                  <a href="https://bitcoin.org/en/full-node" target="_blank" rel="noreferrer" className="flex flex-row items-center peer hover:cursor-pointer">
+                    <p className="text-2xl font-semibold hover:cursor-pointer my-3 peer transition-all">Bitcoin Full Node</p>
+                    <FiExternalLink size={22} className="text-secondary ml-2"/>
+                  </a>
+                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 md:hidden">Help secure the most decentralised blockchain, while eliminating all third parties.</p>
+                </div>
+                <div>
+                  <p className="text-2xl font-semibold hover:cursor-pointer my-3 peer transition-all">Password manager</p>
+                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 md:hidden">Access all of your password easily and fast, while keeping them secure</p>
+                </div>
+                <div>
+                  <p className="text-2xl font-semibold hover:cursor-pointer my-3 peer transition-all">Hardware VPN</p>
+                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 md:hidden">Achieve a private connection to the World Wide Web</p>
+                </div>
+                <div>
+                  <p className="text-2xl font-semibold hover:cursor-pointer my-3 peer transition-all">Home Assistant</p>
+                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 md:hidden">Automate your Home, while maintaing full control</p>
+                </div>
+                <p className="text-2xl font-semibold mt-2">and much much more,<br/>because it’s truly yours...</p>
+              </div>
+            </div>
+          </div>
+          <div className="w-full hidden flex-col mx-auto my-10 md:my-5 md:mb-0 bg-primary min-h-[390px] bg-cover rounded-3xl fadeIn md:flex" style={{backgroundImage: `url(${macro})`}} />
+          <div className="w-full hidden flex-col justify-center items-center mx-auto my-10 md:my-5 bg-primary min-h-[490px] bg-cover rounded-3xl fadeIn md:flex">
             <h2 className="text-[4rem] font-semibold text-secondary pt-7 mb-5 md:mb-0 md:text-center md:text-5xl">How cubit will serve you</h2>
             <div className="w-full flex flex-col justify-end items-end mx-auto">
               <br/>
