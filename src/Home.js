@@ -41,7 +41,7 @@ export default function Home() {
         </div>
         <div className="h-screen w-screen flex flex-col justify-between items-center absolute top-0 fadeIn tracking-tighter font-semibold">
           <h1 className="text-transparent text-7xl mt-10 md:mt-20 font-normal bg-clip-text bg-gradient-to-t to-gray-500 from-indigo-200 tracking-tight">Cubit</h1>
-          <p className="text-secondary text-3xl mb-[2rem] md:mb-20 md:text-center">your personal<br className="hidden md:block"/>controlnode</p>
+          <p className="text-secondary text-3xl mb-[1.5rem] md:mb-20 md:text-center">your personal <br className="hidden md:block"/>controlnode</p>
         </div>
         <div className="w-11/12 max-w-[1390px] flex flex-col mx-auto mt-10 md:mt-20 fadeIn">
           <div className="w-full flex flex-row md:flex-col bg-black tracking-tighter h-[560px] md:h-auto justify-between md:justify-center items-center">
@@ -181,7 +181,7 @@ export default function Home() {
             </div>
           </div>
           <div className="w-full flex flex-row justify-center items-center mx-auto mb-10 md:mb-5 min-h-[50px] rounded-3xl fadeIn">
-            <Link to="discover" className="text-secondary bg-primary font-bold p-5 mr-5 rounded-3xl hover:bg-gray-900 transition-all md:text-center">Discover our vision</Link>
+            <Link to="discover" className="text-secondary bg-primary font-bold p-5 mr-5 rounded-3xl hover:bg-gray-900 transition-all md:text-center">Discover our Vision</Link>
             <a href="https://discord.gg/Kv7hyVFs" className="p-5 bg-[#5865F2] ml-5 rounded-3xl hover:bg-blue-500 text-white font-bold transition-all md:text-center">Lear more on Discord</a>
           </div>
         </div>
