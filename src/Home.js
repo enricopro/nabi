@@ -1,6 +1,7 @@
 import { FaDiscord, FaTwitter } from 'react-icons/fa';
 import { BiChevronsDown } from 'react-icons/bi';
 import { FiExternalLink } from 'react-icons/fi'
+import { MdOutlineKeyboardArrowDown } from 'react-icons/md';
 import React, { useState, useEffect } from 'react';
 import firstp from './img/firstp.png';
 import macro from './img/macro.jpg';
@@ -60,43 +61,57 @@ export default function Home() {
             <div className="w-1/2 md:w-full flex flex-row justify-start mx-auto tracking-no rounded-3xl h-[490px] bg-cover bg-right md:bg-center bg tracking-tighter mr-5 md:mr-0 md:mb-5" style={{backgroundImage: `url(${bringithome})`}} />
             <div className="flex flex-col items-center justify-center w-1/2 md:w-auto bg-primary rounded-3xl p-10 md:p-8 md:py-2 h-full md:h-auto ml-5 md:ml-auto">
               <br/>
-              <p className="text-secondary text-2xl font-semibold px-8 md:p-2">Your Google account has a controlnode. Your data, your messages, your interests are all tied, in one way or the other, to this account.<br/><br/>This account is a contract between you and Google.<br/>You can be banned, censored, excluded and used, all withouth crossing the agreement's limits.<br/><br/>cubit is a controlnode that you own</p>
+              <p className="text-secondary text-2xl font-semibold px-8 md:p-2">Your Google account has a controlnode. Your data, your messages, your interests are all tied, in one way or the other, to this account.<br/><br/>This account is a contract between you and Google.<br/>You can be banned, censored, excluded and used, all withouth crossing the agreement's limits.<br/><br/>Cubit is a controlnode that you own</p>
             </div>
           </div>
           <div className="w-full flex flex-col justify-center items-center mx-auto my-10 md:my-5 bg-primary min-h-[490px] bg-cover rounded-3xl fadeIn md:hidden" style={{backgroundImage: `url(${macro})`}}>
-            <h2 className="text-[4rem] font-semibold text-secondary pt-7 mb-5 md:mb-0 md:text-center md:text-5xl">How cubit will serve you</h2>
+            <h2 className="text-[4rem] font-semibold text-secondary pt-7 mb-5 md:mb-0 md:text-center md:text-5xl">How Cubit will serve you</h2>
             <div className="w-full flex flex-col justify-end items-end mx-auto">
               <br/>
               <div className="flex flex-col items-start justify-center w-1/2 md:w-full rounded-3xl p-10 md:p-0 md:pb-10 h-full mr-5 md:mr-0 md:pl-10 text-secondary md:pt-2">
                 <div>
-                  <p className="text-2xl hover:cursor-pointer font-semibold my-3 peer transition-all">Network Attached Storage</p>
-                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 md:hidden">Your data in one secure place, easily accessible at any time</p>
+                  <div className="flex flex-row items-center peer hover:cursor-pointer">
+                    <MdOutlineKeyboardArrowDown size={22} className="text-secondary mr-3"/>
+                    <p className="text-2xl hover:cursor-pointer font-semibold my-3 peer transition-all">Network Attached Storage</p>
+                  </div>
+                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 ml-[34px] md:hidden">Your data in one secure place, easily accessible at any time</p>
                 </div>
                 <div>
                   <a href="https://identity.foundation/ion/" target="_blank" rel="noreferrer" className="flex flex-row items-center peer hover:cursor-pointer">
+                    <MdOutlineKeyboardArrowDown size={22} className="text-secondary mr-3"/>
                     <p className="text-2xl font-semibold hover:cursor-pointer my-3 peer transition-all">ION Node</p>
                     <FiExternalLink size={22} className="text-secondary ml-2"/>
                   </a>
-                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 md:hidden">Identity is an important topic. Do not trust, verify by yourself!</p>
+                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 ml-[34px] md:hidden">Identity is an important topic. Do not trust, verify by yourself!</p>
                 </div>
                 <div>
                   <a href="https://bitcoin.org/en/full-node" target="_blank" rel="noreferrer" className="flex flex-row items-center peer hover:cursor-pointer">
+                    <MdOutlineKeyboardArrowDown size={22} className="text-secondary mr-3"/>
                     <p className="text-2xl font-semibold hover:cursor-pointer my-3 peer transition-all">Bitcoin Full Node</p>
                     <FiExternalLink size={22} className="text-secondary ml-2"/>
                   </a>
-                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 md:hidden">Help secure the most decentralised blockchain, while eliminating all third parties.</p>
+                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 ml-[34px] md:hidden">Help secure the most decentralised blockchain, while eliminating all third parties.</p>
                 </div>
                 <div>
-                  <p className="text-2xl font-semibold hover:cursor-pointer my-3 peer transition-all">Password manager</p>
-                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 md:hidden">Access all of your password easily and fast, while keeping them secure</p>
+                  <div className="flex flex-row items-center peer hover:cursor-pointer">
+                    <MdOutlineKeyboardArrowDown size={22} className="text-secondary mr-3"/>
+                    <p className="text-2xl font-semibold hover:cursor-pointer my-3 peer transition-all">Password manager</p>
+                  </div>
+                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 ml-[34px] md:hidden">Access all of your password easily and fast, while keeping them secure</p>
                 </div>
                 <div>
+                <div className="flex flex-row items-center peer hover:cursor-pointer">
+                  <MdOutlineKeyboardArrowDown size={22} className="text-secondary mr-3"/>
                   <p className="text-2xl font-semibold hover:cursor-pointer my-3 peer transition-all">Hardware VPN</p>
-                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 md:hidden">Achieve a private connection to the World Wide Web</p>
+                </div>
+                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 ml-[34px] md:hidden">Achieve a private connection to the World Wide Web</p>
                 </div>
                 <div>
-                  <p className="text-2xl font-semibold hover:cursor-pointer my-3 peer transition-all">Home Assistant</p>
-                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 md:hidden">Automate your Home, while maintaing full control</p>
+                  <div className="flex flex-row items-center peer hover:cursor-pointer">
+                    <MdOutlineKeyboardArrowDown size={22} className="text-secondary mr-3"/>
+                    <p className="text-2xl font-semibold hover:cursor-pointer my-3 peer transition-all">Home Assistant</p>
+                  </div>
+                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 ml-[34px] md:hidden">Automate your Home, while maintaing full control</p>
                 </div>
                 <p className="text-2xl font-semibold mt-2">and much much more,<br/>because it’s truly yours...</p>
               </div>
@@ -104,7 +119,7 @@ export default function Home() {
           </div>
           <div className="w-full hidden flex-col mx-auto my-10 md:my-5 md:mb-0 bg-primary min-h-[390px] bg-cover rounded-3xl fadeIn md:flex" style={{backgroundImage: `url(${macro})`}} />
           <div className="w-full hidden flex-col justify-center items-center mx-auto my-10 md:my-5 bg-primary min-h-[490px] bg-cover rounded-3xl fadeIn md:flex">
-            <h2 className="text-[4rem] font-semibold text-secondary pt-7 mb-5 md:mb-0 md:text-center md:text-5xl">How cubit will serve you</h2>
+            <h2 className="text-[4rem] font-semibold text-secondary pt-7 mb-5 md:mb-0 md:text-center md:text-5xl">How Cubit will serve you</h2>
             <div className="w-full flex flex-col justify-end items-end mx-auto">
               <br/>
               <div className="flex flex-col items-start justify-center w-1/2 md:w-full rounded-3xl p-10 md:p-0 md:pb-10 h-full mr-5 md:mr-0 md:pl-10 text-secondary md:pt-2">
