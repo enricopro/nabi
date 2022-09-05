@@ -43,8 +43,8 @@ export default function Home() {
           <h1 className="text-transparent text-7xl mt-10 md:mt-20 font-normal bg-clip-text bg-gradient-to-t to-gray-500 from-indigo-200 tracking-tight">Cubit</h1>
           <p className="text-secondary text-3xl mb-[1.5rem] md:mb-20 md:text-center">your personal <br className="hidden md:block"/>controlnode</p>
         </div>
-        <div className="w-11/12 max-w-[1390px] flex flex-col mx-auto mt-10 md:mt-20 fadeIn">
-          <div className="w-full flex flex-row md:flex-col bg-black tracking-tighter h-[560px] md:h-auto justify-between md:justify-center items-center">
+        <div className="w-11/12 max-w-[1390px] flex flex-col mx-auto mt-[-3rem] z-30 md:mt-0 fadeIn">
+          <div className="w-full flex flex-row md:flex-col bg-black tracking-tighter z-30 h-[560px] md:h-auto justify-between md:justify-center items-center">
             <div className="flex flex-col items-center justify-center w-1/2 md:w-full bg-primary rounded-3xl p-10 md:p-2 md:py-10 h-full md:h-auto mr-5 md:mr-auto">
               <h2 className="text-secondary text-3xl font-semibold">What is a controlnode?</h2>
               <br/>
