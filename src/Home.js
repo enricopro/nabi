@@ -4,7 +4,7 @@ import { FiExternalLink } from 'react-icons/fi'
 import { MdOutlineKeyboardArrowDown } from 'react-icons/md';
 import React, { useState, useEffect } from 'react';
 import firstp from './img/firstp.png';
-import macro from './img/macro.jpg';
+import macro from './img/macro.gif';
 import bringithome from './img/bringithome.jpg';
 import { Link } from "react-router-dom";
 
@@ -161,7 +161,7 @@ export default function Home() {
             <div className="flex flex-col justify-center items-center">
               <div className="text-[4rem] md:text-5xl font-semibold text-secondary pt-7 md:text-center">What's inside</div>
               <div className="flex flex-row justify-center items-center">
-                <div className="w-2/5 h-full p-10 text-secondary min-h-[850px] flex flex-col justify-between items-center text-center md:hidden">
+                <div className="w-2/5 h-full p-10 text-secondary min-h-[950px] flex flex-col justify-between items-center text-center md:hidden">
                   <p className="text-secondary text-6xl font-semibold">Simply<br/>compact</p>
                   <p className="text-secondary text-6xl font-semibold">Silent</p>
                   <p className="text-secondary text-6xl font-semibold">Fast</p>
