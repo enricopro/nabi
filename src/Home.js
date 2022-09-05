@@ -118,7 +118,7 @@ export default function Home() {
             </div>
           </div>
           <div className="w-full hidden flex-col mx-auto my-10 md:my-5 md:mb-0 bg-primary min-h-[390px] bg-cover rounded-3xl fadeIn md:flex" style={{backgroundImage: `url(${macro})`}} />
-          <div className="w-full hidden flex-col justify-center items-center mx-auto my-10 md:my-5 bg-primary min-h-[490px] bg-cover rounded-3xl fadeIn md:flex">
+          <div className="w-full hidden flex-col justify-center items-center mx-auto my-10 md:my-5 bg-gradient-to-b from-bg_blue to-gray-900 min-h-[490px] bg-cover rounded-3xl fadeIn md:flex">
             <h2 className="text-[4rem] font-semibold text-secondary pt-7 mb-5 md:mb-0 md:text-center md:text-5xl">How Cubit will serve you</h2>
             <div className="w-full flex flex-col justify-end items-end mx-auto">
               <br/>
@@ -129,10 +129,11 @@ export default function Home() {
                 </div>
                 <div>
                   <a href="https://identity.foundation/ion/" target="_blank" rel="noreferrer" className="flex flex-row items-center peer hover:cursor-pointer">
+                    <MdOutlineKeyboardArrowDown size={22} className="text-secondary mr-3"/>
                     <p className="text-2xl font-semibold hover:cursor-pointer my-3 peer transition-all">ION Node</p>
                     <FiExternalLink size={22} className="text-secondary ml-2"/>
                   </a>
-                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 md:hidden">Identity is an important topic. Do not trust, verify by yourself!</p>
+                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100">Identity is an important topic. Do not trust, verify by yourself!</p>
                 </div>
                 <div>
                   <a href="https://bitcoin.org/en/full-node" target="_blank" rel="noreferrer" className="flex flex-row items-center peer hover:cursor-pointer">

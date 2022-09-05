@@ -7,7 +7,8 @@ module.exports = {
     extend: {
       colors: {
         primary: "#151516", //gray, box background
-        secondary: "#b4b4b8" //text
+        secondary: "#b4b4b8", //text
+        bg_blue: "#385263"
       }
     },
     fontFamily: {
