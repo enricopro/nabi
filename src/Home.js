@@ -22,6 +22,22 @@ export default function Home() {
     }
  }, [clicked]);
 
+  useEffect(() => {
+    if(clicked) {
+      return;
+    }
+    window.addEventListener('scroll', () => setClicked(true));
+    return (() => window.removeEventListener('scroll', console.log()))
+  }, [clicked])
+
+  useEffect(() => {
+    async function fetchMyAPI() {
+      //let response = await fetch('https://api.countapi.xyz/hit/nabispace/nabikey')
+      //await response.json()
+    }
+    fetchMyAPI()
+  }, [])
+
   function renderWebsite() {
     if(clicked) {
       return <>
@@ -41,15 +57,15 @@ export default function Home() {
         </div>
         <div className="h-screen w-screen flex flex-col justify-between items-center absolute top-0 fadeIn tracking-tighter font-semibold">
           <h1 className="text-transparent text-7xl mt-10 md:mt-20 font-normal bg-clip-text bg-gradient-to-t to-gray-500 from-indigo-200 tracking-tight">Cubit</h1>
-          <p className="text-secondary text-3xl mb-[1.5rem] md:mb-20 md:text-center">your personal <br className="hidden md:block"/>controlnode</p>
+          <p className="text-secondary text-3xl mb-[1.5rem] md:mb-20 ld:mb-24 md:text-center">your personal <br className="hidden md:block"/>controlnode</p>
         </div>
         <div className="w-11/12 max-w-[1390px] flex flex-col mx-auto mt-[-3rem] z-30 md:mt-0 fadeIn">
-          <div className="w-full flex flex-row md:flex-col bg-black tracking-tighter z-30 h-[560px] md:h-auto justify-between md:justify-center items-center">
+          <div className="w-full flex flex-row md:flex-col bg-black tracking-tighter z-30 h-[560px] ld:h-[600px] md:h-auto justify-between md:justify-center items-center">
             <div className="flex flex-col items-center justify-center w-1/2 md:w-full bg-primary rounded-3xl p-10 md:p-2 md:py-10 h-full md:h-auto mr-5 md:mr-auto">
               <h2 className="text-secondary text-3xl font-semibold">What is a controlnode?</h2>
               <br/>
-              <p className="text-secondary text-2xl font-semibold px-8">A controlnode is a single point of control over some parts of your digital life.<br/>
-              The three pillars of your digital life are your data, your identity and your connections.<br/><br/>You can be either aware or unaware, but everyone has at least one controlnode.<br/><br/>You can own it, or you can rent it - which really means that someone else owns it.</p>
+              <p className="text-secondary text-2xl font-semibold px-8">A controlnode is a single point of control over some parts of your Digital Life.<br/>
+              The three pillars of your Digital Life are your data, your identity and your connections.<br/><br/>You can be either aware or unaware, but everyone has at least one controlnode.<br/><br/>You can own it, or you can rent it - which really means that someone else owns it.</p>
             </div>
             <div className="bg-cover flex flex-col items-center justify-center w-1/2 md:w-full rounded-3xl h-full ml-5 md:hidden fadeIn" style={{backgroundImage: `url(${firstp})`}}>
               <p className="text-transparent text-[5rem] leading-tight font-bold bg-clip-text bg-gradient-to-t text-black">Are you</p>
@@ -57,14 +73,14 @@ export default function Home() {
               <p className="text-transparent text-[5rem] leading-tight font-bold bg-clip-text bg-gradient-to-t text-black">owner?</p>
             </div>
           </div>
-          <div className="w-full flex flex-row md:flex-col bg-black tracking-tighter h-[490px] md:h-auto justify-between md:justify-center items-center mt-10 md:mt-5">
-            <div className="w-1/2 md:w-full flex flex-row justify-start mx-auto tracking-no rounded-3xl h-[490px] bg-cover bg-right md:bg-center bg tracking-tighter mr-5 md:mr-0 md:mb-5" style={{backgroundImage: `url(${bringithome})`}} />
+          <div className="w-full flex flex-row md:flex-col bg-black tracking-tighter h-[490px] ld:h-[600px] md:h-auto justify-between md:justify-center items-center mt-10 md:mt-5">
+            <div className="w-1/2 md:w-full flex flex-row justify-start mx-auto tracking-no rounded-3xl h-[490px] ld:h-[600px] bg-cover bg-right md:bg-center bg tracking-tighter mr-5 md:mr-0 md:mb-5" style={{backgroundImage: `url(${bringithome})`}} />
             <div className="flex flex-col items-center justify-center w-1/2 md:w-auto bg-primary rounded-3xl p-10 md:p-8 md:py-2 h-full md:h-auto ml-5 md:ml-auto">
               <br/>
               <p className="text-secondary text-2xl font-semibold px-8 md:p-2">Your Google account has a controlnode. Your data, your messages, your interests are all tied, in one way or the other, to this account.<br/><br/>This account is a contract between you and Google.<br/>You can be banned, censored, excluded and used, all withouth crossing the agreement's limits.<br/><br/>Cubit is a controlnode that you own</p>
             </div>
           </div>
-          <div className="w-full flex flex-col justify-center items-center mx-auto my-10 md:my-5 bg-primary min-h-[490px] bg-cover rounded-3xl fadeIn md:hidden" style={{backgroundImage: `url(${macro})`}}>
+          <div className="w-full flex flex-col justify-center items-center mx-auto my-10 md:my-5 bg-primary min-h-[490px] bg-cover ld:bg-left rounded-3xl fadeIn md:hidden" style={{backgroundImage: `url(${macro})`}}>
             <h2 className="text-[4rem] font-semibold text-secondary pt-7 mb-5 md:mb-0 md:text-center md:text-5xl">How Cubit will serve you</h2>
             <div className="w-full flex flex-col justify-end items-end mx-auto">
               <br/>
@@ -124,35 +140,46 @@ export default function Home() {
               <br/>
               <div className="flex flex-col items-start justify-center w-1/2 md:w-full rounded-3xl p-10 md:p-0 md:pb-10 h-full mr-5 md:mr-0 md:pl-10 text-secondary md:pt-2">
                 <div>
-                  <p className="text-2xl hover:cursor-pointer font-semibold my-3 peer transition-all">Network Attached Storage</p>
-                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 md:hidden">Your data in one secure place, easily accessible at any time</p>
+                  <div className="flex flex-row items-center peer hover:cursor-pointer">
+                    <MdOutlineKeyboardArrowDown size={22} className="text-secondary mr-3"/>
+                    <p className="text-2xl hover:cursor-pointer font-semibold my-3 peer transition-all">Network Attached Storage</p>
+                  </div>
+                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 ml-[34px]">Your data in one secure place, easily accessible at any time</p>
                 </div>
                 <div>
-                  <a href="https://identity.foundation/ion/" target="_blank" rel="noreferrer" className="flex flex-row items-center peer hover:cursor-pointer">
+                  <div className="flex flex-row items-center peer hover:cursor-pointer">
                     <MdOutlineKeyboardArrowDown size={22} className="text-secondary mr-3"/>
                     <p className="text-2xl font-semibold hover:cursor-pointer my-3 peer transition-all">ION Node</p>
-                    <FiExternalLink size={22} className="text-secondary ml-2"/>
-                  </a>
-                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100">Identity is an important topic. Do not trust, verify by yourself!</p>
+                  </div>
+                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 ml-[34px]">Identity is an important topic. Do not trust, verify by yourself! <a href="https://identity.foundation/ion/" target="_blank" rel="noreferrer" className="underline">Learn more.</a></p>
                 </div>
                 <div>
-                  <a href="https://bitcoin.org/en/full-node" target="_blank" rel="noreferrer" className="flex flex-row items-center peer hover:cursor-pointer">
+                  <div className="flex flex-row items-center peer hover:cursor-pointer">
+                    <MdOutlineKeyboardArrowDown size={22} className="text-secondary mr-3"/>
                     <p className="text-2xl font-semibold hover:cursor-pointer my-3 peer transition-all">Bitcoin Full Node</p>
-                    <FiExternalLink size={22} className="text-secondary ml-2"/>
-                  </a>
-                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 md:hidden">Help secure the most decentralised blockchain, while eliminating all third parties.</p>
+                  </div>
+                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 ml-[34px]">Help secure the most decentralised blockchain, while eliminating all third parties. <a href="https://bitcoin.org/en/full-node" target="_blank" rel="noreferrer" className="underline">Learn more.</a></p>
                 </div>
                 <div>
-                  <p className="text-2xl font-semibold hover:cursor-pointer my-3 peer transition-all">Password manager</p>
-                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 md:hidden">Access all of your password easily and fast, while keeping them secure</p>
+                  <div className="flex flex-row items-center peer hover:cursor-pointer">
+                    <MdOutlineKeyboardArrowDown size={22} className="text-secondary mr-3"/>
+                    <p className="text-2xl font-semibold hover:cursor-pointer my-3 peer transition-all">Password manager</p>
+                  </div>
+                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 ml-[34px]">Access all of your password easily and fast, while keeping them secure</p>
                 </div>
                 <div>
-                  <p className="text-2xl font-semibold hover:cursor-pointer my-3 peer transition-all">Hardware VPN</p>
-                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 md:hidden">Achieve a private connection to the World Wide Web</p>
+                  <div className="flex flex-row items-center peer hover:cursor-pointer">
+                    <MdOutlineKeyboardArrowDown size={22} className="text-secondary mr-3"/>
+                    <p className="text-2xl font-semibold hover:cursor-pointer my-3 peer transition-all">Hardware VPN</p>
+                  </div>
+                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 ml-[34px]">Achieve a private connection to the World Wide Web</p>
                 </div>
                 <div>
-                  <p className="text-2xl font-semibold hover:cursor-pointer my-3 peer transition-all">Home Assistant</p>
-                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 md:hidden">Automate your Home, while maintaing full control</p>
+                  <div className="flex flex-row items-center peer hover:cursor-pointer">
+                    <MdOutlineKeyboardArrowDown size={22} className="text-secondary mr-3"/>
+                    <p className="text-2xl font-semibold hover:cursor-pointer my-3 peer transition-all">Home Assistant</p>
+                  </div>
+                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 ml-[34px]">Automate your Home, while maintaing full control</p>
                 </div>
                 <p className="text-2xl font-semibold mt-2">and much much more,<br/>because it’s truly yours...</p>
               </div>
@@ -183,7 +210,7 @@ export default function Home() {
           </div>
           <div className="w-full flex flex-row justify-center items-center mx-auto mb-10 md:mb-5 min-h-[50px] rounded-3xl fadeIn">
             <Link to="discover" className="text-secondary bg-primary font-bold p-5 mr-5 rounded-3xl hover:bg-gray-900 transition-all md:text-center">Discover our Vision</Link>
-            <a href="https://discord.gg/WeJfhJCTgD" className="p-5 bg-[#5865F2] ml-5 rounded-3xl hover:bg-blue-500 text-white font-bold transition-all md:text-center">Lear more on Discord</a>
+            <a href="https://bit.ly/3AReQQT" className="p-5 bg-[#5865F2] ml-5 rounded-3xl hover:bg-blue-500 text-white font-bold transition-all md:text-center">Lear more on Discord</a>
           </div>
         </div>
         <div className="w-full flex flex-col py-8 first-letter:justify-center bg-primary items-center mx-auto min-h-[100px] fadeIn">
@@ -200,7 +227,7 @@ export default function Home() {
   return (
     <>
       <div className="w-screen justify-center bg-black flex realtive top-0 group fadeIn">
-        <img className={`md:h-screen w-screen object-cover ${clicked ? 'blur-none transition-all 2s' : 'blur-sm'}`} src={require("./img/cubit.jpg")} alt="cubit"/>
+        <img className={`md:h-screen ld:h-screen w-screen object-cover ${clicked ? 'blur-none transition-all 2s' : 'blur-sm'}`} src={require("./img/cubit.jpg")} alt="cubit"/>
         <BiChevronsDown onClick={() => setClicked(true)} size={30} className={`text-secondary absolute bottom-10 hover:scale-110 transition-all hover:cursor-pointer animate-bounce z-20 ${clicked ? 'opacity-0' : 'opacity-100'}`} />
       </div>
       
