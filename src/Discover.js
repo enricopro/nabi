@@ -16,10 +16,10 @@ export default function Discover() {
         <a href="https://nabi.technology/"className="flex flex-row text-secondary w-full items-center">
         </a>
         <div className="flex flex-row items-center">
-          <a href="https://discord.gg/Kv7hyVFs" className="z-10">
+          <a href="https://bit.ly/3AReQQT" className="z-10">
             <FaDiscord size={22} className="text-secondary mx-2 hover:text-gray-300 transition-all"/>
           </a>
-          <a href="https://discord.gg/Kv7hyVFs" className="z-10">
+          <a href="https://bit.ly/3RxlxhW" className="z-10">
             <FaTwitter size={22} className="text-secondary mx-2 hover:text-gray-300 transition-all"/>
           </a>
         </div>
