@@ -209,8 +209,8 @@ export default function Home() {
             </div>
           </div>
           <div className="w-full flex flex-row justify-center items-center mx-auto mb-10 md:mb-5 min-h-[50px] rounded-3xl fadeIn">
-            <Link to="discover" className="text-secondary bg-primary font-bold p-5 mr-5 rounded-3xl hover:bg-gray-900 transition-all md:text-center">Discover our Vision</Link>
-            <a href="https://bit.ly/3AReQQT" className="p-5 bg-[#5865F2] ml-5 rounded-3xl hover:bg-blue-500 text-white font-bold transition-all md:text-center">Lear more on Discord</a>
+            <Link to="discover" className="text-primary bg-secondary font-bold p-5 mr-5 rounded-3xl hover:bg-gray-300 transition-all md:text-center">Discover our Vision</Link>
+            <a href="https://bit.ly/3AReQQT" className="p-5 bg-[#5865F2] ml-5 rounded-3xl hover:bg-blue-500 text-white font-bold transition-all md:text-center">Learn more on Discord</a>
           </div>
         </div>
         <div className="w-full flex flex-col py-8 first-letter:justify-center bg-primary items-center mx-auto min-h-[100px] fadeIn">
