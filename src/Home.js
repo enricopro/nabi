@@ -77,7 +77,7 @@ export default function Home() {
             <div className="w-1/2 md:w-full flex flex-row justify-start mx-auto tracking-no rounded-3xl h-[490px] ld:h-[600px] bg-cover bg-right md:bg-center bg tracking-tighter mr-5 md:mr-0 md:mb-5" style={{backgroundImage: `url(${bringithome})`}} />
             <div className="flex flex-col items-center justify-center w-1/2 md:w-auto bg-primary rounded-3xl p-10 md:p-8 md:py-2 h-full md:h-auto ml-5 md:ml-auto">
               <br/>
-              <p className="text-secondary text-2xl font-semibold px-8 md:p-2">Your Google account has a controlnode. Your data, your messages, your interests are all tied, in one way or the other, to this account.<br/><br/>This account is a contract between you and Google.<br/>You can be banned, censored, excluded and used, all without crossing the agreement's limits.<br/><br/>Cubit is a controlnode that you own</p>
+              <p className="text-secondary text-2xl font-semibold px-8 md:p-2">Your Google account has a controlnode. Your data, your messages, your interests are all tied, in one way or the other, to this account.<br/><br/>This account is a contract between you and Google.<br/>You can be banned, censored, excluded and used, all without crossing the agreement's limits.<br/><br/>Cubit is a controlnode that you own.</p>
             </div>
           </div>
           <div className="w-full flex flex-col justify-center items-center mx-auto my-10 md:my-5 bg-primary min-h-[490px] bg-cover ld:bg-left rounded-3xl fadeIn md:hidden" style={{backgroundImage: `url(${macro})`}}>
