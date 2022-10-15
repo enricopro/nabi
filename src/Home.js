@@ -35,7 +35,7 @@ export default function Home() {
       let response = await fetch('https://api.countapi.xyz/hit/nabispace/nabikey')
       await response.json()
     }
-    fetchMyAPI()
+    //fetchMyAPI() /[TODO] Rimuovere commento
   }, [])
 
   function renderWebsite() {
@@ -60,24 +60,23 @@ export default function Home() {
           <p className="text-secondary text-3xl mb-[1.5rem] md:mb-20 ld:mb-24 md:text-center">your personal <br className="hidden md:block"/>controlnode</p>
         </div>
         <div className="w-11/12 max-w-[1390px] flex flex-col mx-auto mt-[-3rem] z-30 md:mt-0 fadeIn">
-          <div className="w-full flex flex-row md:flex-col bg-black tracking-tighter z-30 h-[560px] ld:h-[600px] md:h-auto justify-between md:justify-center items-center">
-            <div className="flex flex-col items-center justify-center w-1/2 md:w-full bg-primary rounded-3xl p-10 md:p-2 md:py-10 h-full md:h-auto mr-5 md:mr-auto">
+          <div className="w-full flex flex-row md:flex-col bg-black tracking-tighter z-30 ld:h-[600px] md:h-auto justify-between md:justify-center items-stretch">
+            <div className="flex flex-col items-center justify-center w-1/2 md:w-full bg-primary rounded-3xl p-10 md:p-2 md:py-10 md:h-auto mr-5 md:mr-auto">
               <h2 className="text-secondary text-3xl font-semibold">What is a controlnode?</h2>
               <br/>
-              <p className="text-secondary text-2xl font-semibold px-8">A controlnode is a single point of control over some parts of your Digital Life.<br/>
-              The three pillars of your Digital Life are your data, your identity and your connections.<br/><br/>You can be either aware or unaware, but everyone has at least one controlnode.<br/><br/>You can own it, or you can rent it - which really means that someone else owns it.</p>
+              <p className="text-secondary text-2xl">A controlnode is any entity that exerts control over your Digital Life<br/>
+              The three pillars of your Digital Life are your Data, your Identity and your Connections.<br/><br/>Conscious or not, everyone has at least one controlnode.<br/><br/>You can own it, or you can rent it - which really means that someone else owns it.</p>
             </div>
-            <div className="bg-cover flex flex-col items-center justify-center w-1/2 md:w-full rounded-3xl h-full ml-5 md:hidden fadeIn" style={{backgroundImage: `url(${firstp})`}}>
+            <div className="bg-cover flex flex-col items-center justify-center w-1/2 md:w-full rounded-3xl ml-5 md:hidden fadeIn" style={{backgroundImage: `url(${firstp})`}}>
               <p className="text-transparent text-[5rem] leading-tight font-bold bg-clip-text bg-gradient-to-t text-black">Are you</p>
               <p className="text-transparent text-[5rem] leading-tight font-bold bg-clip-text bg-gradient-to-t text-black">the only</p>
               <p className="text-transparent text-[5rem] leading-tight font-bold bg-clip-text bg-gradient-to-t text-black">owner?</p>
             </div>
           </div>
-          <div className="w-full flex flex-row md:flex-col bg-black tracking-tighter h-[490px] ld:h-[600px] md:h-auto justify-between md:justify-center items-center mt-10 md:mt-5">
-            <div className="w-1/2 md:w-full flex flex-row justify-start mx-auto tracking-no rounded-3xl h-[490px] ld:h-[600px] bg-cover bg-right md:bg-center bg tracking-tighter mr-5 md:mr-0 md:mb-5" style={{backgroundImage: `url(${bringithome})`}} />
+          <div className="w-full flex flex-row md:flex-col bg-black tracking-tighter ld:h-[600px] md:h-auto justify-between md:justify-center items-stretch mt-10 md:mt-5">
+            <div className="w-1/2 md:w-full flex flex-row justify-start mx-auto tracking-no rounded-3xl ld:h-[600px] bg-cover bg-right md:bg-center bg tracking-tighter mr-5 md:mr-0 md:mb-5" style={{backgroundImage: `url(${bringithome})`}} />
             <div className="flex flex-col items-center justify-center w-1/2 md:w-auto bg-primary rounded-3xl p-10 md:p-8 md:py-2 h-full md:h-auto ml-5 md:ml-auto">
-              <br/>
-              <p className="text-secondary text-2xl font-semibold px-8 md:p-2">Your Google account has a controlnode. Your data, your messages, your interests are all tied, in one way or the other, to this account.<br/><br/>This account is a contract between you and Google.<br/>You can be banned, censored, excluded and used, all without crossing the agreement's limits.<br/><br/>Cubit is a controlnode that you own.</p>
+              <p className="text-secondary text-2xl md:p-2">Your Google account has a controlnode. Your data, your messages, your interests are all tied to this account.<br/><br/>This account is a contract between you and Google.<br/>You can be banned, censored, excluded and used, all without crossing the agreement's limits.<br/><br/>Cubit is a controlnode that you own.</p>
             </div>
           </div>
           <div className="w-full flex flex-col justify-center items-center mx-auto my-10 md:my-5 bg-primary min-h-[490px] bg-cover ld:bg-left rounded-3xl fadeIn md:hidden" style={{backgroundImage: `url(${macro})`}}>
@@ -205,7 +204,7 @@ export default function Home() {
               <img className="" src={require("./img/logo.png")} alt="logo"/>
             </div>
             <div className="w-4/5 md:w-full">
-              <p className="text-secondary text-2xl font-semibold p-10 md:p-8 md:pt-2">Nabi is an early project with a simple Mission. Help build the Internet of Peers, where the individual is at the core, not at the periphery. Where technology is a tool for people, not the end goal. Where we can all experience freedom.</p>
+              <p className="text-secondary text-2xl font-semibold p-10 md:p-8 md:pt-2">Make Digital Self Sovereignty so simple that everyone can provide for themselves.</p>
             </div>
           </div>
           <div className="w-full flex flex-row justify-center items-center mx-auto mb-10 md:mb-5 min-h-[50px] rounded-3xl fadeIn">
