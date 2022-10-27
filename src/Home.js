@@ -60,7 +60,7 @@ export default function Home() {
           <p className="text-secondary text-3xl mb-[1.5rem] md:mb-20 ld:mb-24 md:text-center">your personal <br className="hidden md:block"/>controlnode</p>
         </div>
         <div className="w-11/12 max-w-[1390px] flex flex-col mx-auto mt-[-3rem] z-30 md:mt-0 fadeIn">
-          <div className="w-full flex flex-row md:flex-col bg-black tracking-tighter z-30 ld:h-[600px] md:h-auto justify-between md:justify-center items-stretch">
+          <div className="w-full flex flex-row md:flex-col bg-black tracking-tighter z-30 md:h-auto justify-between md:justify-center items-stretch mt-10">
             <div className="flex flex-col items-center justify-center w-1/2 md:w-full bg-primary rounded-3xl p-10 md:p-2 md:py-10 md:h-auto mr-5 md:mr-auto">
               <h2 className="text-secondary text-3xl font-semibold">What is a controlnode?</h2>
               <br/>
@@ -73,7 +73,7 @@ export default function Home() {
               <p className="text-transparent text-[5rem] leading-tight font-bold bg-clip-text bg-gradient-to-t text-black">owner?</p>
             </div>
           </div>
-          <div className="w-full flex flex-row md:flex-col bg-black tracking-tighter ld:h-[600px] md:h-auto justify-between md:justify-center items-stretch mt-10 md:mt-5">
+          <div className="w-full flex flex-row md:flex-col bg-black tracking-tighter min-h-[400px] ld:h-[600px] md:h-auto justify-between md:justify-center items-stretch mt-10 md:mt-5">
             <div className="w-1/2 md:w-full flex flex-row justify-start mx-auto tracking-no rounded-3xl ld:h-[600px] bg-cover bg-right md:bg-center bg tracking-tighter mr-5 md:mr-0 md:mb-5" style={{backgroundImage: `url(${bringithome})`}} />
             <div className="flex flex-col items-center justify-center w-1/2 md:w-auto bg-primary rounded-3xl p-10 md:p-8 md:py-2 h-full md:h-auto ml-5 md:ml-auto">
               <p className="text-secondary text-2xl md:p-2">Your Google account has a controlnode. Your data, your messages, your interests are all tied to this account.<br/><br/>This account is a contract between you and Google.<br/>You can be banned, censored, excluded and used, all without crossing the agreement's limits.<br/><br/>Cubit is a controlnode that you own.</p>
@@ -84,47 +84,48 @@ export default function Home() {
             <div className="w-full flex flex-col justify-end items-end mx-auto">
               <br/>
               <div className="flex flex-col items-start justify-center w-1/2 md:w-full rounded-3xl p-10 md:p-0 md:pb-10 h-full mr-5 md:mr-0 md:pl-10 text-secondary md:pt-2">
-                <div>
-                  <div className="flex flex-row items-center peer hover:cursor-pointer">
-                    <MdOutlineKeyboardArrowDown size={22} className="text-secondary mr-3"/>
-                    <p className="text-2xl hover:cursor-pointer font-semibold my-3 peer transition-all">Network Attached Storage</p>
-                  </div>
-                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 ml-[34px] md:hidden">Your data in one secure place, easily accessible at any time</p>
+                <div className="group">
+                  <a href="https://identity.foundation/decentralized-web-node/spec/" target="_blank" rel="noreferrer" className="flex flex-row items-center peer hover:cursor-pointer">
+                    <MdOutlineKeyboardArrowDown size={22} className="text-secondary mr-3 -rotate-90 group-hover:rotate-0 transition-all"/>
+                    <p className="text-2xl hover:cursor-pointer font-semibold my-3 transition-all">Decentralized Web Node</p>
+                    <FiExternalLink size={22} className="text-secondary ml-2"/>
+                  </a>
+                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 ml-[34px] md:hidden">Your data and messages in one secure place, easily accessible at any time</p>
                 </div>
-                <div>
+                <div className="group">
                   <a href="https://identity.foundation/ion/" target="_blank" rel="noreferrer" className="flex flex-row items-center peer hover:cursor-pointer">
-                    <MdOutlineKeyboardArrowDown size={22} className="text-secondary mr-3"/>
-                    <p className="text-2xl font-semibold hover:cursor-pointer my-3 peer transition-all">ION Node</p>
+                    <MdOutlineKeyboardArrowDown size={22} className="text-secondary mr-3 -rotate-90 group-hover:rotate-0 transition-all"/>
+                    <p className="text-2xl font-semibold hover:cursor-pointer my-3 transition-all">ION Node</p>
                     <FiExternalLink size={22} className="text-secondary ml-2"/>
                   </a>
                   <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 ml-[34px] md:hidden">Identity is an important topic. Do not trust, verify by yourself!</p>
                 </div>
-                <div>
+                <div className="group">
                   <a href="https://bitcoin.org/en/full-node" target="_blank" rel="noreferrer" className="flex flex-row items-center peer hover:cursor-pointer">
-                    <MdOutlineKeyboardArrowDown size={22} className="text-secondary mr-3"/>
-                    <p className="text-2xl font-semibold hover:cursor-pointer my-3 peer transition-all">Bitcoin Full Node</p>
+                    <MdOutlineKeyboardArrowDown size={22} className="text-secondary mr-3 -rotate-90 group-hover:rotate-0 transition-all"/>
+                    <p className="text-2xl font-semibold hover:cursor-pointer my-3 transition-all">Bitcoin Full Node</p>
                     <FiExternalLink size={22} className="text-secondary ml-2"/>
                   </a>
-                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 ml-[34px] md:hidden">Help secure the most decentralised blockchain, while eliminating all third parties.</p>
+                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 ml-[34px] md:hidden">Help secure the most decentralised blockchain, while eliminating all third parties</p>
                 </div>
-                <div>
+                <div className="group">
                   <div className="flex flex-row items-center peer hover:cursor-pointer">
-                    <MdOutlineKeyboardArrowDown size={22} className="text-secondary mr-3"/>
-                    <p className="text-2xl font-semibold hover:cursor-pointer my-3 peer transition-all">Password manager</p>
+                    <MdOutlineKeyboardArrowDown size={22} className="text-secondary mr-3 -rotate-90 group-hover:rotate-0 transition-all"/>
+                    <p className="text-2xl font-semibold hover:cursor-pointer my-3 transition-all">Password manager</p>
                   </div>
                   <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 ml-[34px] md:hidden">Access all of your password easily and fast, while keeping them secure</p>
                 </div>
-                <div>
+                <div className="group">
                 <div className="flex flex-row items-center peer hover:cursor-pointer">
-                  <MdOutlineKeyboardArrowDown size={22} className="text-secondary mr-3"/>
-                  <p className="text-2xl font-semibold hover:cursor-pointer my-3 peer transition-all">Hardware VPN</p>
+                  <MdOutlineKeyboardArrowDown size={22} className="text-secondary mr-3 -rotate-90 group-hover:rotate-0 transition-all"/>
+                  <p className="text-2xl font-semibold hover:cursor-pointer my-3 transition-all">Hardware VPN</p>
                 </div>
                   <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 ml-[34px] md:hidden">Achieve a private connection to the World Wide Web</p>
                 </div>
-                <div>
+                <div className="group">
                   <div className="flex flex-row items-center peer hover:cursor-pointer">
-                    <MdOutlineKeyboardArrowDown size={22} className="text-secondary mr-3"/>
-                    <p className="text-2xl font-semibold hover:cursor-pointer my-3 peer transition-all">Home Assistant</p>
+                    <MdOutlineKeyboardArrowDown size={22} className="text-secondary mr-3 -rotate-90 group-hover:rotate-0 transition-all"/>
+                    <p className="text-2xl font-semibold hover:cursor-pointer my-3 transition-all">Home Assistant</p>
                   </div>
                   <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 ml-[34px] md:hidden">Automate your Home, while maintaing full control</p>
                 </div>
@@ -157,7 +158,7 @@ export default function Home() {
                     <MdOutlineKeyboardArrowDown size={22} className="text-secondary mr-3"/>
                     <p className="text-2xl font-semibold hover:cursor-pointer my-3 peer transition-all">Bitcoin Full Node</p>
                   </div>
-                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 ml-[34px]">Help secure the most decentralised blockchain, while eliminating all third parties. <a href="https://bitcoin.org/en/full-node" target="_blank" rel="noreferrer" className="underline">Learn more.</a></p>
+                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 ml-[34px]">Help secure the most decentralised blockchain, while eliminating all third parties <a href="https://bitcoin.org/en/full-node" target="_blank" rel="noreferrer" className="underline">Learn more.</a></p>
                 </div>
                 <div>
                   <div className="flex flex-row items-center peer hover:cursor-pointer">
@@ -200,11 +201,11 @@ export default function Home() {
             </div>
           </div>
           <div className="w-full flex flex-row md:flex-col justify-center items-center mx-auto mb-10 md:mb-5 bg-primary min-h-[100px] rounded-3xl fadeIn">
-            <div className="w-1/5 md:w-full p-10 md:p-5 text-secondary flex items-center justify-center">
-              <img className="" src={require("./img/logo.png")} alt="logo"/>
+            <div className="md:w-full md:p-5 text-secondary flex items-center justify-center">
+              <img className="h-24" src={require("./img/logo.png")} alt="logo"/>
             </div>
-            <div className="w-4/5 md:w-full">
-              <p className="text-secondary text-2xl font-semibold p-10 md:p-8 md:pt-2">Make Digital Self Sovereignty so simple that everyone can provide for themselves.</p>
+            <div className="md:w-full">
+              <p className="text-secondary text-2xl font-semibold p-10 md:p-8 md:pt-2">" Make Digital Self Sovereignty so simple that everyone can provide for themselves. "</p>
             </div>
           </div>
           <div className="w-full flex flex-row justify-center items-center mx-auto mb-10 md:mb-5 min-h-[50px] rounded-3xl fadeIn">
@@ -215,6 +216,7 @@ export default function Home() {
         <div className="w-full flex flex-col py-8 first-letter:justify-center bg-primary items-center mx-auto min-h-[100px] fadeIn">
           <p className="text-secondary">Renders made by <a href="https://www.instagram.com/_matteocorra/" className="underline">Permeteo</a>.</p>
           <p className="text-secondary">Logo made by <a href="https://www.instagram.com/radiciannodate/" className="underline">Anna</a>.</p>
+          <p className="text-secondary">Developed by <a href="https://twitter.com/enricosystem" className="underline">Enrico</a>.</p>
           <p className="text-secondary">Nabi Technology</p>
         </div>
       </>
