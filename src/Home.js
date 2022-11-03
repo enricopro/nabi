@@ -85,7 +85,7 @@ export default function Home() {
               <br/>
               <div className="flex flex-col items-start justify-center w-1/2 md:w-full rounded-3xl p-10 md:p-0 md:pb-10 h-full mr-5 md:mr-0 md:pl-10 text-secondary md:pt-2">
                 <div className="group">
-                  <a href="https://identity.foundation/decentralized-web-node/spec/" target="_blank" rel="noreferrer" className="flex flex-row items-center peer hover:cursor-pointer">
+                  <a href="https://developer.tbd.website/projects/dwn-sdk-js/README" target="_blank" rel="noreferrer" className="flex flex-row items-center peer hover:cursor-pointer">
                     <MdOutlineKeyboardArrowDown size={22} className="text-secondary mr-3 -rotate-90 group-hover:rotate-0 transition-all"/>
                     <p className="text-2xl hover:cursor-pointer font-semibold my-3 transition-all">Decentralized Web Node</p>
                     <FiExternalLink size={22} className="text-secondary ml-2"/>
@@ -144,7 +144,7 @@ export default function Home() {
                     <MdOutlineKeyboardArrowDown size={22} className="text-secondary mr-3 -rotate-90 group-hover:rotate-0 transition-all"/>
                     <p className="text-2xl hover:cursor-pointer font-semibold my-3 peer transition-all">Decentralized Web Node</p>
                   </div>
-                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 ml-[34px]">Your data and messages in one secure place, easily accessible at any time. <a href="https://identity.foundation/decentralized-web-node/spec/" target="_blank" rel="noreferrer" className="underline">Learn more.</a></p>
+                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 ml-[34px]">Your data and messages in one secure place, easily accessible at any time. <a href="https://developer.tbd.website/projects/dwn-sdk-js/README" target="_blank" rel="noreferrer" className="underline">Learn more.</a></p>
                 </div>
                 <div className="group">
                   <div className="flex flex-row items-center peer hover:cursor-pointer">
