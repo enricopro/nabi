@@ -185,27 +185,27 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="w-full flex flex-col justify-center items-center mx-auto mb-10 md:mb-4 bg-primary min-h-[490px] rounded-3xl fadeIn md:p-8">
+          <div className="w-full flex flex-col justify-center items-center mx-auto mb-10 md:mb-4 bg-primary min-h-[490px] rounded-3xl fadeIn">
             <div className="flex flex-col justify-center items-center">
-              <div className="text-[4rem] md:text-5xl font-semibold text-secondary pt-7 md:pt-0 md:text-center">What's inside</div>
+              <div className="text-[4rem] md:text-5xl font-semibold text-secondary pt-7 md:text-center md:p-8">What's inside</div>
               <div className="flex flex-row justify-center items-center">
                 <div className="w-2/5 h-full p-10 text-secondary min-h-[950px] flex flex-col justify-between items-center text-center md:hidden">
                   <p className="text-secondary text-6xl font-semibold">Simply<br/>compact</p>
                   <p className="text-secondary text-6xl font-semibold">Silent</p>
                   <p className="text-secondary text-6xl font-semibold">Fast</p>
                 </div>
-                <div className="w-3/5 md:w-full h-full">
-                  <img className="mt-10" src={require("./img/esploso.png")} alt="components"/>
+                <div className="w-3/5 md:w-full h-full md:pl-4 md:pb-4">
+                  <img className="" src={require("./img/esploso.png")} alt="components"/>
                 </div>
               </div>
             </div>
           </div>
-          <div className="w-full flex flex-row md:flex-col justify-center items-center mx-auto mb-10 md:mb-4 bg-primary min-h-[100px] rounded-3xl fadeIn md:p-8">
+          <div className="w-full flex flex-row md:flex-col justify-center items-center p-5 mx-auto mb-10 md:mb-4 bg-primary min-h-[100px] rounded-3xl fadeIn md:p-8">
             <div className="md:w-full md:p-5 text-secondary flex items-center justify-center">
               <img className="h-24" src={require("./img/logo.png")} alt="logo"/>
             </div>
             <div className="md:w-full">
-              <p className="text-secondary text-2xl font-semibold p-10 md:p-0 md:pt-2 md:text-center">"Make Digital Self Sovereignty so simple that everyone can provide for themselves."</p>
+              <p className="text-secondary text-2xl font-semibold p-5 md:p-0 md:pt-2 md:text-center">"Make Digital Self Sovereignty so simple that everyone can provide for themselves."</p>
             </div>
           </div>
           <div className="w-full flex flex-row justify-center items-center mx-auto mb-10 md:mb-5 min-h-[50px] rounded-3xl fadeIn">

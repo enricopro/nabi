@@ -3,6 +3,7 @@ import cctv from './img/cctv.png';
 import locker from './img/locker.png';
 import btcbutterfly from './img/btcbutterfly.jpg';
 import { useEffect } from 'react';
+import { Link } from "react-router-dom";
 
 export default function Discover() {
 
@@ -13,8 +14,9 @@ export default function Discover() {
   return (
     <>
       <div className="w-screen flex flex-row items-center justify-between h-16 px-5 absolute top-0 fadeIn">
-        <a href="https://nabi.technology/"className="flex flex-row text-secondary w-full items-center">
-        </a>
+        <Link to="home" className="flex flex-row text-secondary w-full items-center hover:cursor-pointer">
+          <img className="ml-2 w-14" src={require("./img/logo.png")} alt="logo"/>
+        </Link>
         <div className="flex flex-row items-center">
           <a href="https://bit.ly/3AReQQT" className="z-10">
             <FaDiscord size={22} className="text-secondary mx-2 hover:text-gray-300 transition-all"/>
@@ -28,7 +30,8 @@ export default function Discover() {
         <img className="mr-2 w-32" src={require("./img/logo.png")} alt="logo"/>
         <h1 className="text-secondary text-7xl">vision</h1>
       </div>
-      <div className="w-11/12 max-w-[1390px] flex flex-col mx-auto mt-10 fadeIn">
+      <p className="text-secondary text-2xl p-5 md:p-0 md:pt-2 text-center w-11/12 mx-auto">"Make Digital Self Sovereignty so simple that everyone can provide for themselves."</p>
+      <div className="w-11/12 max-w-[1390px] flex flex-col mx-auto mt-20 md:mt-10 fadeIn">
         <div className="w-full flex flex-row md:flex-col tracking-tighter justify-between items-stretch">
           <div className="flex flex-col items-center justify-center w-1/2 md:w-full bg-primary rounded-3xl p-10 md:p-8 mr-5 md:mr-0 h-full">
             <p className="text-secondary text-2xl">Technology is about people.<br/>We do believe in it.<br/>Humanity has always built new tools to achieve higher standards of living and mitigate the risks that lie in the unknowable future.<br/><br/>From the wheel to the smartphone, technology helped us to achieve an ever-better present which gave us the direction towards an ever-hopeful future.<br/>But where's bright, it's also dark, and when there are successes there are also challenges.<br/><br/>The Web today is centralized and dominated by a handful of companies. We were so dependent on this system that we couldn't think of any alternatives.<br/>But things are changing.</p>
@@ -56,7 +59,7 @@ export default function Discover() {
           </div>
         </div>
       </div>
-      <div className="w-11/12 max-w-[1390px] flex flex-col mx-auto mt-10 md:mt-4 mb-4 md:mb-0 fadeIn">
+      <div className="w-11/12 max-w-[1390px] flex flex-col mx-auto my-10 md:mt-4 md:mb-0 fadeIn">
         <div className="w-full flex flex-row md:flex-col-reverse tracking-tighter min-h-[490px] justify-between ld:items-center">
           <div className="w-1/2 md:w-full md:h-[390px] rounded-3xl mr-5 md:mr-0 md:mt-0 fadeIn bg-cover bg-center md:bg-contain md:bg-no-repeat ld:h-[590px]" style={{backgroundImage: `url(${btcbutterfly})`}}>
           </div>
