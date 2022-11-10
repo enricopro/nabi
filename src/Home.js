@@ -36,7 +36,7 @@ export default function Home() {
       let response = await fetch('https://api.countapi.xyz/hit/nabispace/nabikey')
       await response.json()
     }
-    //fetchMyAPI() /[TODO] Rimuovere commento
+    fetchMyAPI()
   }, [])
 
   function renderWebsite() {
