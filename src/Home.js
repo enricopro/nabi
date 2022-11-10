@@ -5,6 +5,7 @@ import { MdOutlineKeyboardArrowDown } from 'react-icons/md';
 import React, { useState, useEffect } from 'react';
 import firstp from './img/firstp.png';
 import macro from './img/macro.gif';
+import mobile from './img/mobile.jpg';
 import bringithome from './img/bringithome.jpg';
 import { Link } from "react-router-dom";
 
@@ -133,10 +134,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="w-full hidden flex-col mx-auto md:my-4 md:mb-0 bg-primary min-h-[390px] bg-cover rounded-3xl fadeIn md:flex" style={{backgroundImage: `url(${macro})`}} />
-          <div className="w-full hidden flex-col justify-center items-center mx-auto my-10 md:my-5 bg-gradient-to-b from-bg_blue to-gray-900 min-h-[490px] bg-cover rounded-3xl fadeIn md:flex p-8">
+          <div className="w-full hidden flex-col justify-center mx-auto my-10 md:my-4 min-h-[490px] bg-cover bg-right rounded-3xl fadeIn md:flex p-8" style={{backgroundImage: `url(${mobile})`}}>
             <h2 className="text-[4rem] font-semibold text-secondary mb-5 md:mb-0 md:text-center md:text-5xl">How Cubit will serve you</h2>
-            <div className="w-full flex flex-col justify-end items-end mx-auto">
+            <div className="w-full flex flex-col mx-auto pr-8">
               <br/>
               <div className="flex flex-col items-start justify-center w-1/2 md:w-full rounded-3xl md:p-0 text-secondary">
                 <div className="group">
@@ -181,9 +181,9 @@ export default function Home() {
                   </div>
                   <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 ml-[34px]">Automate your Home, while maintaing full control</p>
                 </div>
-                <p className="text-2xl font-semibold mt-2">and much much more,<br/>because it’s truly yours...</p>
               </div>
             </div>
+            <p className="text-2xl text-secondary font-semibold mt-2">and much much more,<br/>because it’s truly yours...</p>
           </div>
           <div className="w-full flex flex-col justify-center items-center mx-auto mb-10 md:mb-4 bg-primary min-h-[490px] rounded-3xl fadeIn">
             <div className="flex flex-col justify-center items-center">
@@ -201,7 +201,7 @@ export default function Home() {
             </div>
           </div>
           <div className="w-full flex flex-row md:flex-col justify-center items-center p-5 mx-auto mb-10 md:mb-4 bg-primary min-h-[100px] rounded-3xl fadeIn md:p-8">
-            <div className="md:w-full md:p-5 text-secondary flex items-center justify-center">
+            <div className="md:w-full md:p-5 md:pt-0 text-secondary flex items-center justify-center">
               <img className="h-24" src={require("./img/logo.png")} alt="logo"/>
             </div>
             <div className="md:w-full">
