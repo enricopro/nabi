@@ -61,7 +61,7 @@ export default function Home() {
           <p className="text-secondary text-3xl mb-[1.5rem] md:mb-20 ld:mb-24 md:text-center">your personal <br className="hidden md:block"/>controlnode</p>
         </div>
         <div className="w-11/12 max-w-[1390px] flex flex-col mx-auto mt-[-3rem] z-30 md:mt-0 fadeIn">
-          <div className="w-full flex flex-row md:flex-col bg-black tracking-tighter z-30 md:h-auto justify-between md:justify-center items-stretch mt-10">
+          <div className="w-full flex flex-row md:flex-col bg-black tracking-tighter z-30 min-h-[500px] md:h-auto justify-between md:justify-center items-stretch mt-10">
             <div className="flex flex-col items-center justify-center w-1/2 md:w-full bg-primary rounded-3xl p-10 md:p-8 md:h-auto mr-5 md:mr-auto">
               <h2 className="text-secondary text-3xl font-semibold">What is a controlnode?</h2>
               <br/>
@@ -70,13 +70,15 @@ export default function Home() {
             </div>
             <div className="bg-cover flex flex-col items-center justify-center w-1/2 md:w-full rounded-3xl ml-5 md:hidden fadeIn" style={{backgroundImage: `url(${firstp})`}}>
               <p className="text-transparent text-[5rem] leading-tight font-bold bg-clip-text bg-gradient-to-t text-black">Are you</p>
-              <p className="text-transparent text-[5rem] leading-tight font-bold bg-clip-text bg-gradient-to-t text-black">the only</p>
+              <p className="text-transparent text-[5rem] leading-tight font-bold bg-clip-text bg-gradient-to-t text-black">the</p>
               <p className="text-transparent text-[5rem] leading-tight font-bold bg-clip-text bg-gradient-to-t text-black">owner?</p>
             </div>
           </div>
           <div className="w-full flex flex-row md:flex-col bg-black tracking-tighter min-h-[500px] md:min-h-0 ld:h-[600px] md:h-auto justify-between md:justify-center items-stretch mt-10 md:mt-4">
             <div className="w-1/2 md:w-full flex flex-row justify-start mx-auto tracking-no rounded-3xl ld:h-[600px] bg-cover bg-right md:bg-center bg tracking-tighter mr-5 md:mr-0 md:mb-4 md:h-96" style={{backgroundImage: `url(${bringithome})`}} />
             <div className="flex flex-col items-center justify-center w-1/2 md:w-auto bg-primary rounded-3xl p-10 md:p-8 md:h-auto ml-5 md:ml-auto">
+              <h2 className="text-secondary text-3xl font-semibold text-center">Cubit a controlnode that you own</h2>
+              <br/>
               <p className="text-secondary text-2xl">Your Google account has a controlnode. Your data, your messages, your interests are all tied to this account.<br/><br/>This account is a contract between you and Google.<br/>You can be banned, censored, excluded and used, all without crossing the agreement's limits.<br/><br/>Cubit is a controlnode that you own.</p>
             </div>
           </div>
@@ -214,9 +216,8 @@ export default function Home() {
           </div>
         </div>
         <div className="w-full flex flex-col py-8 first-letter:justify-center bg-primary items-center mx-auto min-h-[100px] fadeIn">
-          <p className="text-secondary">Renders made by <a href="https://www.instagram.com/_matteocorra/" className="underline">Permeteo</a>.</p>
+          <p className="text-secondary">Founded by <a href="https://twitter.com/enricosystem" className="underline">Enrico</a>, <a href="https://twitter.com/permeteo" className="underline">Permeteo</a> and <a href="https://twitter.com/pippellia" className="underline">Pippellia</a>.</p>
           <p className="text-secondary">Logo made by <a href="https://www.instagram.com/radiciannodate/" className="underline">Anna</a>.</p>
-          <p className="text-secondary">Developed by <a href="https://twitter.com/enricosystem" className="underline">Enrico</a>.</p>
           <p className="text-secondary">Nabi Technology</p>
         </div>
       </>

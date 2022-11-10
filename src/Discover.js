@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 export default function Discover() {
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    //window.scrollTo(0, 0);
   }, []);
 
   return (
@@ -30,7 +30,7 @@ export default function Discover() {
         <img className="mr-2 w-32" src={require("./img/logo.png")} alt="logo"/>
         <h1 className="text-secondary text-7xl">vision</h1>
       </div>
-      <p className="text-secondary text-2xl p-5 md:p-0 md:pt-2 text-center w-11/12 mx-auto">"Make Digital Self Sovereignty so simple that everyone can provide for themselves."</p>
+      <p className="text-secondary text-2xl p-5 md:p-0 md:mt-6 text-center w-11/12 mx-auto">"Make Digital Self Sovereignty so simple that everyone can provide for themselves."</p>
       <div className="w-11/12 max-w-[1390px] flex flex-col mx-auto mt-20 md:mt-10 fadeIn">
         <div className="w-full flex flex-row md:flex-col tracking-tighter justify-between items-stretch">
           <div className="flex flex-col items-center justify-center w-1/2 md:w-full bg-primary rounded-3xl p-10 md:p-8 mr-5 md:mr-0 h-full">
@@ -70,9 +70,8 @@ export default function Discover() {
         </div>
       </div>
       <div className="w-full flex flex-col py-8 first-letter:justify-center bg-primary items-center mx-auto min-h-[100px] fadeIn">
-        <p className="text-secondary">Renders made by <a href="https://www.instagram.com/_matteocorra/" className="underline">Permeteo</a>.</p>
+        <p className="text-secondary">Founded by <a href="https://twitter.com/enricosystem" className="underline">Enrico</a>, <a href="https://twitter.com/permeteo" className="underline">Permeteo</a> and <a href="https://twitter.com/pippellia" className="underline">Pippellia</a>.</p>
         <p className="text-secondary">Logo made by <a href="https://www.instagram.com/radiciannodate/" className="underline">Anna</a>.</p>
-        <p className="text-secondary">Developed by <a href="https://twitter.com/enricosystem" className="underline">Enrico</a>.</p>
         <p className="text-secondary">Nabi Technology</p>
       </div>
     </>
