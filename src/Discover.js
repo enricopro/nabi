@@ -65,7 +65,7 @@ export default function Discover() {
           </div>
           <div className="flex flex-col items-center justify-center w-1/2 md:w-full bg-primary rounded-3xl p-10 md:p-8 ml-5 md:ml-0">
             <p className="text-secondary text-2xl">Now the technology is ready to replace the Internet of Corporations with the Internet of Peers.<br/><br/>To make this dream reality, there are obstacles to overcome. Self-sovereignty is hard, self-custody is hard - but they shouldn't be. Privacy, Security and Private Property are universal human rights and therefore shouldn't be limited only to those who are competent enough to provide for their own Digital Lives.<br/><br/>Nabi is a piece of the revolution. Our goal is to build the best personal controlnode in the world, so that everyone can easily join this revolution, as a Peer.<br/><br/>And you can be part of it, too.</p>
-            <a href="https://bit.ly/3AReQQT" className="p-5 py-3 bg-[#5865F2] ml-5 md:ml-0 mt-5 rounded-3xl hover:bg-blue-500 text-white font-bold transition-all">Let’s talk on Discord</a>
+            <a href="https://bit.ly/3AReQQT" className="p-5 py-3 bg-[#5865F2] ml-5 md:ml-0 mt-5 rounded-3xl hover:bg-blue-500 text-white text-center font-bold transition-all">Let’s talk on Discord</a>
           </div>
         </div>
       </div>
