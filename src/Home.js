@@ -77,7 +77,7 @@ export default function Home() {
           <div className="w-full flex flex-row md:flex-col bg-black tracking-tighter min-h-[500px] md:min-h-0 ld:h-[600px] md:h-auto justify-between md:justify-center items-stretch mt-10 md:mt-4">
             <div className="w-1/2 md:w-full flex flex-row justify-start mx-auto tracking-no rounded-3xl ld:h-[600px] bg-cover bg-right md:bg-center bg tracking-tighter mr-5 md:mr-0 md:mb-4 md:h-96" style={{backgroundImage: `url(${bringithome})`}} />
             <div className="flex flex-col items-center justify-center w-1/2 md:w-auto bg-primary rounded-3xl p-10 md:p-8 md:h-auto ml-5 md:ml-auto">
-              <h2 className="text-secondary text-3xl font-semibold text-center">Cubit a controlnode that you own</h2>
+              <h2 className="text-secondary text-3xl font-semibold text-center">Cubit is a controlnode that you own</h2>
               <br/>
               <p className="text-secondary text-2xl">Your Google account has a controlnode. Your data, your messages, your interests are all tied to this account.<br/><br/>This account is a contract between you and Google.<br/>You can be banned, censored, excluded and used, all without crossing the agreement's limits.<br/><br/>Cubit is a controlnode that you own.</p>
             </div>
