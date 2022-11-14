@@ -63,7 +63,7 @@ export default function Home() {
         <div className="w-11/12 max-w-[1390px] flex flex-col mx-auto mt-[-3rem] z-30 md:mt-0 fadeIn">
           <div className="w-full flex flex-row md:flex-col bg-black tracking-tighter z-30 min-h-[500px] md:h-auto justify-between md:justify-center items-stretch mt-10">
             <div className="flex flex-col items-center justify-center w-1/2 md:w-full bg-primary rounded-3xl p-10 md:p-8 md:h-auto mr-5 md:mr-auto">
-              <h2 className="text-secondary text-3xl font-semibold">What is a controlnode?</h2>
+              <h2 className="text-secondary text-3xl font-semibold text-center">What is a controlnode?</h2>
               <br/>
               <p className="text-secondary text-2xl">A controlnode is any entity that exerts control over your Digital Life<br/>
               The three pillars of your Digital Life are your Data, your Identity and your Connections.<br/><br/>Conscious or not, everyone has at least one controlnode.<br/><br/>You can own it, or you can rent it - which really means that someone else owns it.</p>
