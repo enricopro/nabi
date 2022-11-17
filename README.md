@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# Nabi Technology
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the official repository of Nabi.
 
-## Available Scripts
+We envision a world where technology is a tool that serves people and not the other way around. We are committed to make this dream into a reality by building the best ***personal controlnode*** in the world.
 
-In the project directory, you can run:
+> Make Digital Self-Sovereignty so simple that everyone can provide for themselves.
 
-### `npm start`
+This is our motto.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Learn more about what we stand for: https://nabi.technology/discover
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Cubit** is our first  *personal controlnode*, designed to make your life easier when it comes to Digital Self-Sovereignty.
 
-### `npm test`
+Learn more about how it does it: https://nabi.technology/
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Contributing
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Contributions are always welcome!
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+If you want to signal a bug, feel free to open an issue on GitHub or to ask for a merge request. 
+If you want to propose a change or an improvement, don't hesitate to create your own branch and ask for a merge request on the `master` branch when ready.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Thank you.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Run Locally
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Clone the project
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+  git clone https://github.com/enricopro/nabi
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Go to the project directory
 
-## Learn More
+```bash
+  cd nabi
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Install dependencies
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+  npm install
+```
 
-### Code Splitting
+Start the server
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+  npm run start
+```
