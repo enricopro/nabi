@@ -207,7 +207,7 @@ export default function Home() {
               <img className="h-24" src={require("./img/logo.png")} alt="logo"/>
             </div>
             <div className="md:w-full">
-              <p className="text-secondary text-2xl font-semibold p-5 md:p-0 md:pt-2 md:text-center">"Make Digital Self Sovereignty so simple that everyone can provide for themselves."</p>
+              <p className="text-secondary text-2xl font-semibold p-5 md:p-0 md:pt-2 md:text-center">"Make Digital Self-Sovereignty so simple that everyone can provide for themselves."</p>
             </div>
           </div>
           <div className="w-full flex flex-row justify-center items-center mx-auto mb-10 md:mb-5 min-h-[50px] rounded-3xl fadeIn">
