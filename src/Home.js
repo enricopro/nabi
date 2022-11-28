@@ -65,7 +65,7 @@ export default function Home() {
             <div className="flex flex-col items-center justify-center w-1/2 md:w-full bg-primary rounded-3xl p-10 md:p-8 md:h-auto mr-5 md:mr-auto">
               <h2 className="text-secondary text-3xl font-semibold text-center">What is a controlnode?</h2>
               <br/>
-              <p className="text-secondary text-2xl">A controlnode is any entity that exerts control over your Digital Life<br/>
+              <p className="text-secondary text-2xl">A controlnode is any entity that exerts control over your Digital Life.<br/>
               The three pillars of your Digital Life are your Data, your Identity and your Connections.<br/><br/>Conscious or not, everyone has at least one controlnode.<br/><br/>You can own it, or you can rent it - which really means that someone else owns it.</p>
             </div>
             <div className="bg-cover flex flex-col items-center justify-center w-1/2 md:w-full rounded-3xl ml-5 md:hidden fadeIn" style={{backgroundImage: `url(${firstp})`}}>
@@ -119,11 +119,12 @@ export default function Home() {
                   <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 ml-[34px] md:hidden">Access all of your password easily and fast, while keeping them safe and private</p>
                 </div>
                 <div className="group">
-                <div className="flex flex-row items-center peer hover:cursor-pointer">
-                  <MdOutlineKeyboardArrowDown size={22} className="text-secondary mr-3 -rotate-90 group-hover:rotate-0 transition-all"/>
-                  <p className="text-2xl font-semibold hover:cursor-pointer my-3 transition-all">Hardware VPN</p>
-                </div>
-                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 ml-[34px] md:hidden">Achieve a private connection to the World Wide Web</p>
+                  <a href="https://lightning.network/" target="_blank" rel="noreferrer" className="flex flex-row items-center peer hover:cursor-pointer">
+                    <MdOutlineKeyboardArrowDown size={22} className="text-secondary mr-3 -rotate-90 group-hover:rotate-0 transition-all"/>
+                    <p className="text-2xl font-semibold hover:cursor-pointer my-3 transition-all">Lightning Node</p>
+                    <FiExternalLink size={22} className="text-secondary ml-2"/>
+                  </a>
+                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 ml-[34px] md:hidden">Join the Lightning Network in the most sovereign way possible</p>
                 </div>
                 <div className="group">
                   <div className="flex flex-row items-center peer hover:cursor-pointer">
@@ -172,9 +173,9 @@ export default function Home() {
                 <div className="group">
                   <div className="flex flex-row items-center peer hover:cursor-pointer">
                     <MdOutlineKeyboardArrowDown size={22} className="text-secondary mr-3 -rotate-90 group-hover:rotate-0 transition-all"/>
-                    <p className="text-2xl font-semibold hover:cursor-pointer my-3 peer transition-all">Hardware VPN</p>
+                    <p className="text-2xl font-semibold hover:cursor-pointer my-3 peer transition-all">Lightning Node</p>
                   </div>
-                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 ml-[34px]">Achieve a private connection to the World Wide Web</p>
+                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 ml-[34px]">Join the Lightning Network in the most sovereign way possible. <a href="https://lightning.network/" target="_blank" rel="noreferrer" className="underline">Learn more.</a></p>
                 </div>
                 <div className="group">
                   <div className="flex flex-row items-center peer hover:cursor-pointer">
@@ -191,13 +192,14 @@ export default function Home() {
             <div className="flex flex-col justify-center items-center">
               <div className="text-[4rem] md:text-5xl font-semibold text-secondary pt-7 md:text-center md:p-8">What's inside</div>
               <div className="flex flex-row justify-center items-center">
-                <div className="w-2/5 h-full p-10 text-secondary min-h-[950px] flex flex-col justify-between items-center text-center md:hidden">
+                <div className="w-2/5 h-full p-10 text-secondary min-h-[1250px] flex flex-col justify-between items-center text-center md:hidden">
                   <p className="text-secondary text-6xl font-semibold">Simply<br/>compact</p>
                   <p className="text-secondary text-6xl font-semibold">Silent</p>
                   <p className="text-secondary text-6xl font-semibold">Fast</p>
                 </div>
-                <div className="w-3/5 md:w-full h-full md:pl-4 md:pb-4">
-                  <img className="" src={require("./img/esploso.png")} alt="components"/>
+                <div className="w-3/5 md:w-full h-full mr-16 md:mr-5 md:pl-4 md:pb-4">
+                  <img className="md:hidden" src={require("./img/esploso.png")} alt="components"/>
+                  <img className="hidden md:block" src={require("./img/esploso_mobile.png")} alt="components"/>
                 </div>
               </div>
             </div>
