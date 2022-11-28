@@ -112,19 +112,19 @@ export default function Home() {
                   <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 ml-[34px] md:hidden">Help secure the most decentralized blockchain, while eliminating all third parties</p>
                 </div>
                 <div className="group">
-                  <div className="flex flex-row items-center peer hover:cursor-pointer">
-                    <MdOutlineKeyboardArrowDown size={22} className="text-secondary mr-3 -rotate-90 group-hover:rotate-0 transition-all"/>
-                    <p className="text-2xl font-semibold hover:cursor-pointer my-3 transition-all">Password manager</p>
-                  </div>
-                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 ml-[34px] md:hidden">Access all of your password easily and fast, while keeping them safe and private</p>
-                </div>
-                <div className="group">
                   <a href="https://lightning.network/" target="_blank" rel="noreferrer" className="flex flex-row items-center peer hover:cursor-pointer">
                     <MdOutlineKeyboardArrowDown size={22} className="text-secondary mr-3 -rotate-90 group-hover:rotate-0 transition-all"/>
                     <p className="text-2xl font-semibold hover:cursor-pointer my-3 transition-all">Lightning Node</p>
                     <FiExternalLink size={22} className="text-secondary ml-2"/>
                   </a>
                   <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 ml-[34px] md:hidden">Join the Lightning Network in the most sovereign way possible</p>
+                </div>
+                <div className="group">
+                  <div className="flex flex-row items-center peer hover:cursor-pointer">
+                    <MdOutlineKeyboardArrowDown size={22} className="text-secondary mr-3 -rotate-90 group-hover:rotate-0 transition-all"/>
+                    <p className="text-2xl font-semibold hover:cursor-pointer my-3 transition-all">Password manager</p>
+                  </div>
+                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 ml-[34px] md:hidden">Access all of your password easily and fast, while keeping them safe and private</p>
                 </div>
                 <div className="group">
                   <div className="flex flex-row items-center peer hover:cursor-pointer">
@@ -166,16 +166,16 @@ export default function Home() {
                 <div className="group">
                   <div className="flex flex-row items-center peer hover:cursor-pointer">
                     <MdOutlineKeyboardArrowDown size={22} className="text-secondary mr-3 -rotate-90 group-hover:rotate-0 transition-all"/>
-                    <p className="text-2xl font-semibold hover:cursor-pointer my-3 peer transition-all">Password manager</p>
+                    <p className="text-2xl font-semibold hover:cursor-pointer my-3 peer transition-all">Lightning Node</p>
                   </div>
-                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 ml-[34px]">Access all of your password easily and fast, while keeping them safe and private</p>
+                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 ml-[34px]">Join the Lightning Network in the most sovereign way possible. <a href="https://lightning.network/" target="_blank" rel="noreferrer" className="underline">Learn more.</a></p>
                 </div>
                 <div className="group">
                   <div className="flex flex-row items-center peer hover:cursor-pointer">
                     <MdOutlineKeyboardArrowDown size={22} className="text-secondary mr-3 -rotate-90 group-hover:rotate-0 transition-all"/>
-                    <p className="text-2xl font-semibold hover:cursor-pointer my-3 peer transition-all">Lightning Node</p>
+                    <p className="text-2xl font-semibold hover:cursor-pointer my-3 peer transition-all">Password manager</p>
                   </div>
-                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 ml-[34px]">Join the Lightning Network in the most sovereign way possible. <a href="https://lightning.network/" target="_blank" rel="noreferrer" className="underline">Learn more.</a></p>
+                  <p className="opacity-0 peer-hover:opacity-100 transition-all duration-1000 hover:opacity-100 ml-[34px]">Access all of your password easily and fast, while keeping them safe and private</p>
                 </div>
                 <div className="group">
                   <div className="flex flex-row items-center peer hover:cursor-pointer">
