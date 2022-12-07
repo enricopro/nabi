@@ -1,4 +1,4 @@
-import { FaDiscord, FaTwitter } from 'react-icons/fa';
+import { FaDiscord, FaTwitter, FaInstagram, FaGithub } from 'react-icons/fa';
 import cctv from './img/cctv.png';
 import locker from './img/locker.png';
 import btcbutterfly from './img/btcbutterfly.jpg';
@@ -23,6 +23,12 @@ export default function Discover() {
           </a>
           <a href="https://bit.ly/3RxlxhW" className="z-10">
             <FaTwitter size={22} className="text-secondary mx-2 hover:text-gray-300 transition-all"/>
+          </a>
+          <a href="http://bit.ly/3VZ2ZJC" className="z-10">
+            <FaInstagram size={22} className="text-secondary mx-2 hover:text-gray-300 transition-all"/>
+          </a>
+          <a href="http://bit.ly/3HlvaOC" className="z-10">
+            <FaGithub size={22} className="text-secondary mx-2 hover:text-gray-300 transition-all"/>
           </a>
         </div>
       </div>
