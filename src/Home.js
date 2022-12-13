@@ -16,7 +16,7 @@ export default function Home() {
   useEffect(() => {
     setTimeout(() => {
       setClicked(true);
-    }, 1000);
+    }, 2000);
  }, [clicked]);
 
   useEffect(() => {
