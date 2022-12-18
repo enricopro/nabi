@@ -23,9 +23,14 @@ export default function Discover() {
           </a>
         </div>
       </div>
-      <div className="max-w-[1390px] flex flex-col">
-        
-
+      <div className="max-w-[1390px] flex flex-row">
+        <div className="w-full flex flex-row justify-center items-center bg-red">
+            <img className="w-2/3" src="https://images.unsplash.com/photo-1510022151265-1bb84d406531?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80" alt="article-cover"/>
+            <div className="w-1/3 flex flex-col justify-center items-center">
+                <h1 className="text-4xl text-secondary">Article Title</h1>
+                <p className="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl nec ultricies lacinia, nisl nisl aliquam nisl, nec aliquam nisl nisl sit amet nisl. Sed euismod, nisl nec ultricies lacinia, nisl nisl aliquam nisl, nec aliquam nisl nisl sit amet nisl.</p>
+            </div>
+        </div>
       </div>
 
       <div className="w-full flex flex-col py-8 first-letter:justify-center bg-primary items-center mx-auto min-h-[100px] fadeIn">
