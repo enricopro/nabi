@@ -29,8 +29,8 @@ export default function Home() {
 
   useEffect(() => {
     async function fetchMyAPI() {
-      let response = await fetch('https://api.countapi.xyz/hit/nabispace/nabikey')
-      await response.json()
+      //let response = await fetch('https://api.countapi.xyz/hit/nabispace/nabikey')
+      //await response.json()
     }
     fetchMyAPI()
   }, [])
