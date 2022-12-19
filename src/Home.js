@@ -14,9 +14,13 @@ export default function Home() {
   const [clicked, setClicked] = useState(false);
 
   useEffect(() => {
-    setTimeout(() => {
-      setClicked(true);
-    }, 2000);
+    if(clicked) {
+      setTimeout(() => {
+        setClicked(true);
+      }, 2000);
+    } else {
+      setClicked(false);
+    }
  }, [clicked]);
 
   useEffect(() => {
