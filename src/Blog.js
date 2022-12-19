@@ -1,6 +1,7 @@
 import { FaDiscord, FaTwitter } from 'react-icons/fa';
 import { useEffect } from 'react';
 import { Link } from "react-router-dom";
+import SmallPost from './components/SmallPost';
 
 export default function Discover() {
 
@@ -23,13 +24,30 @@ export default function Discover() {
           </a>
         </div>
       </div>
-      <div className="max-w-[1390px] flex flex-row">
-        <div className="w-full flex flex-row justify-center items-center bg-red">
-            <img className="w-2/3" src="https://images.unsplash.com/photo-1510022151265-1bb84d406531?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80" alt="article-cover"/>
-            <div className="w-1/3 flex flex-col justify-center items-center">
-                <h1 className="text-4xl text-secondary">Article Title</h1>
-                <p className="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl nec ultricies lacinia, nisl nisl aliquam nisl, nec aliquam nisl nisl sit amet nisl. Sed euismod, nisl nec ultricies lacinia, nisl nisl aliquam nisl, nec aliquam nisl nisl sit amet nisl.</p>
+      <div className="flex flex-row w-full justify-center items-center mt-20 mb-10">
+        <img className="mr-2 w-32" src={require("./img/logo.png")} alt="logo"/>
+        <h1 className="text-secondary text-7xl">blog</h1>
+      </div>
+      <div className="max-w-[1390px] px-20 flex flex-col justify-center items-center w-screen mx-auto">
+        <div className="w-full flex flex-row justify-between h-80 mb-20">
+            <div className="w-2/3 overflow-hidden flex justify-center items-center rounded-2xl">
+              <img className="object-fill" src="https://images.unsplash.com/photo-1510022151265-1bb84d406531?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format" alt="article-cover"/>
             </div>
+            <div className="w-[25%] flex flex-col justify-center items-center">
+                <h1 className="text-4xl text-secondary">Article Title</h1>
+                <p className="text-secondary overflow-ellipsis">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl nec ultricies lacinia, nisl nisl aliquam nisl, nec aliquam nisl nisl sit amet nisl. Sed euismod, nisl nec ultricies lacinia, nisl nisl aliquam nisl, nec aliquam nisl nisl sit amet nisl.</p>
+            </div>
+        </div>
+        <div className="flex flex-row justify-between mb-10 w-full">
+          <div className="w-1/3 flex justify-center items-center">
+            <SmallPost/>
+          </div>
+          <div className="w-1/3 flex justify-center items-center mx-10">
+            <SmallPost/>
+          </div>
+          <div className="w-1/3 flex justify-center items-center">
+            <SmallPost/>
+          </div>
         </div>
       </div>
 
