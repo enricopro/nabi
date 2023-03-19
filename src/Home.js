@@ -8,16 +8,16 @@ import macro from './img/macro.gif';
 import mobile from './img/mobile.jpg';
 import bringithome from './img/bringithome.jpg';
 import { Link } from "react-router-dom";
+import Footer from './components/Footer';
+import axios from 'axios';	
 
 export default function Home() {
 
-  const [clicked, setClicked] = useState(false);
+  const sendgrid_apikey = process.env.REACT_APP_SENDGRID_API_KEY;
 
-  useEffect(() => {
-    setTimeout(() => {
-      setClicked(true);
-    }, 2000);
- }, [clicked]);
+  const [clicked, setClicked] = useState(false);
+  const [user_email, setUserEmail] = useState('');
+  const [errorInEmail, setErrorInEmail] = useState(false);
 
   useEffect(() => {
     if(clicked) {
@@ -35,47 +35,80 @@ export default function Home() {
     fetchMyAPI()
   }, [])
 
+  function onChangeEmail(e) {
+    setUserEmail(e.target.value);
+  }
+
+  function subscribe() {
+    //check if the string user_email is a valid email
+    if(user_email.includes('@') && user_email.includes('.')) {
+      const data = {"contacts": [{"email": user_email}]};
+      console.log("API KEY: " + sendgrid_apikey)
+      const headers = {
+        'Authorization': sendgrid_apikey,
+        'Content-Type': 'application/json'
+      };
+      axios.put('https://api.sendgrid.com/v3/marketing/contacts', data, { headers })
+        .then(response => {
+          setErrorInEmail(false);
+        })
+        .catch(error => {
+          console.error(error);
+        });
+    } else {
+      setErrorInEmail(true);
+    }
+  }
+
   function renderWebsite() {
     if(clicked) {
       return <>
         <div className="w-screen flex flex-row items-center justify-between h-16 px-5 absolute top-0 fadeIn">
           <a href="https://nabi.technology/"className="flex flex-row text-secondary w-full items-center hover:cursor-pointer">
-            <p>product by</p>
+            <p className="md:hidden">product by</p>
             <img className="ml-2 w-14" src={require("./img/logo.png")} alt="logo"/>
           </a>
+          <Link to="discover" className="text-secondary mx-2 z-10">Vision</Link>
+          <a href="https://blog.nabi.technology/" className="text-secondary mx-2 hover:cursor-pointer z-10">Blog</a>
           <div className="flex flex-row items-center">
-            <a href="https://bit.ly/3AReQQT" className="z-10">
+            <a href="https://bit.ly/3AReQQT" className="z-10 md:hidden">
               <FaDiscord size={22} className="text-secondary mx-2 hover:text-gray-300 transition-all"/>
             </a>
-            <a href="https://bit.ly/3RxlxhW" className="z-10">
+            <a href="https://bit.ly/3RxlxhW" className="z-10 md:hidden">
               <FaTwitter size={22} className="text-secondary mx-2 hover:text-gray-300 transition-all"/>
             </a>
           </div>
         </div>
         <div className="h-screen w-screen flex flex-col justify-between items-center absolute top-0 fadeIn tracking-tighter font-semibold">
           <h1 className="text-transparent text-7xl mt-10 md:mt-20 font-normal bg-clip-text bg-gradient-to-t to-gray-500 from-indigo-200 tracking-tight">Cubit</h1>
-          <p className="text-secondary text-3xl mb-[1.5rem] md:mb-20 ld:mb-24 md:text-center">your personal <br className="hidden md:block"/>controlnode</p>
+          <p className="text-secondary text-3xl mb-[1.5rem] md:mb-20 ld:mb-24 md:text-center">your personal <br className="hidden md:block"/>server</p>
         </div>
-        <div className="w-11/12 max-w-[1390px] flex flex-col mx-auto mt-[-3rem] z-30 md:mt-0 fadeIn">
+        <div className="w-11/12 max-w-[1390px] flex flex-col justify-center items-center mb-20 md:mb-10 mx-auto mt-[-0.25rem] z-10">
+          <p className="text-secondary text-center text-2xl mb-5 z-10">Cubit is in production, would you like to receive an e-mail for when it is ready?</p>
+          <div className="flex flex-row justify-center">
+            <input type="email" onChange={(e) => onChangeEmail(e)} className={`w-60 rounded-3xl pl-6 text-secondary ${errorInEmail ? 'bg-red-100' : 'bg-gray-100'}`} placeholder="Email address" />
+            <button onClick={() => subscribe()} className="rounded-3xl font-bold p-3 px-4 ml-2 text-white bg-[#5865F2] hover:bg-blue-500 transition-all">Yeah, let me know!</button>
+          </div>
+        </div>
+        <div className="w-11/12 max-w-[1390px] flex flex-col mx-auto z-30 md:mt-0 fadeIn">
           <div className="w-full flex flex-row md:flex-col bg-black tracking-tighter z-30 min-h-[500px] md:h-auto justify-between md:justify-center items-stretch mt-10">
             <div className="flex flex-col items-center justify-center w-1/2 md:w-full bg-primary rounded-3xl p-10 md:p-8 md:h-auto mr-5 md:mr-auto">
-              <h2 className="text-secondary text-3xl font-semibold text-center">What is a controlnode?</h2>
+              <h2 className="text-secondary text-3xl font-semibold text-center">The Broken Promise</h2>
               <br/>
-              <p className="text-secondary text-2xl">A controlnode is any entity that exerts control over your Digital Life.<br/>
-              The three pillars of your Digital Life are your Data, your Identity and your Connections.<br/><br/>Conscious or not, everyone has at least one controlnode.<br/><br/>You can own it, or you can rent it - which really means that someone else owns it.</p>
+              <p className="text-secondary text-2xl">The promise of the cloud is that intelligent algorithms will take care of everything for you. But there is no cloud; it's just someone else's computer.<br/><br/>The cloud paradigm requires you to surrender your data and privacy by allowing giant tech corporations to monitor you in order to reap the benefits of technology.</p>
             </div>
             <div className="bg-cover flex flex-col items-center justify-center w-1/2 md:w-full rounded-3xl ml-5 md:hidden fadeIn" style={{backgroundImage: `url(${firstp})`}}>
               <p className="text-transparent text-[5rem] leading-tight font-bold bg-clip-text bg-gradient-to-t text-black">Are you</p>
-              <p className="text-transparent text-[5rem] leading-tight font-bold bg-clip-text bg-gradient-to-t text-black">the</p>
-              <p className="text-transparent text-[5rem] leading-tight font-bold bg-clip-text bg-gradient-to-t text-black">owner?</p>
+              <p className="text-transparent text-[5rem] leading-tight font-bold bg-clip-text bg-gradient-to-t text-black">in</p>
+              <p className="text-transparent text-[5rem] leading-tight font-bold bg-clip-text bg-gradient-to-t text-black">control?</p>
             </div>
           </div>
           <div className="w-full flex flex-row md:flex-col bg-black tracking-tighter min-h-[500px] md:min-h-0 ld:h-[600px] md:h-auto justify-between md:justify-center items-stretch mt-10 md:mt-4">
             <div className="w-1/2 md:w-full flex flex-row justify-start mx-auto tracking-no rounded-3xl ld:h-[600px] bg-cover bg-right md:bg-center bg tracking-tighter mr-5 md:mr-0 md:mb-4 md:h-96" style={{backgroundImage: `url(${bringithome})`}} />
             <div className="flex flex-col items-center justify-center w-1/2 md:w-auto bg-primary rounded-3xl p-10 md:p-8 md:h-auto ml-5 md:ml-auto">
-              <h2 className="text-secondary text-3xl font-semibold text-center">Cubit is a controlnode that you own</h2>
+              <h2 className="text-secondary text-3xl font-semibold text-center">Meet Cubit</h2>
               <br/>
-              <p className="text-secondary text-2xl">Your Google account has a controlnode. Your data, your messages, your interests are all tied to this account.<br/><br/>This account is a contract between you and Google.<br/>You can be banned, censored, excluded and used, all without crossing the agreement's limits.<br/><br/>Cubit is a controlnode that you own.</p>
+              <p className="text-secondary text-2xl">The convenience of the cloud with the control and privacy of your own server. Now you can secure your data at home, be your own bank, become uncensurable and protect your privacy.<br/><br/>With Cubit, you get these 4 superpowers, on all your devices, and they are simple to use.</p>
             </div>
           </div>
           <div className="w-full flex flex-col justify-center items-center mx-auto my-10 md:my-5 bg-primary min-h-[490px] bg-cover ld:bg-left rounded-3xl fadeIn md:hidden" style={{backgroundImage: `url(${macro})`}}>
@@ -213,11 +246,7 @@ export default function Home() {
             <a href="https://bit.ly/3AReQQT" className="p-5 bg-[#5865F2] ml-5 rounded-3xl hover:bg-blue-500 text-white font-bold transition-all md:text-center">Learn more on Discord</a>
           </div>
         </div>
-        <div className="w-full flex flex-col py-8 first-letter:justify-center bg-primary items-center mx-auto min-h-[100px] fadeIn">
-          <p className="text-secondary">Founded by <a href="https://twitter.com/enricosystem" className="underline">Enrico</a>, <a href="https://twitter.com/permeteo" className="underline">Permeteo</a> and <a href="https://twitter.com/pippellia" className="underline">Pippellia</a>.</p>
-          <p className="text-secondary">Logo made by <a href="https://www.instagram.com/radiciannodate/" className="underline">Anna</a>.</p>
-          <p className="text-secondary">Nabi Technology</p>
-        </div>
+        <Footer />
       </>
     } else {
       return <></>;
@@ -228,6 +257,7 @@ export default function Home() {
     <>
       <div className="w-screen justify-center bg-black flex realtive top-0 group fadeIn">
         <img className={`md:h-screen ld:h-screen w-screen object-cover ${clicked ? 'blur-none transition-all 2s' : 'blur-sm'}`} src={require("./img/cubit.jpg")} alt="cubit"/>
+        <h2 className={`text-secondary text-2xl text-center absolute top-1/2 -translate-y-1/2 ${clicked ? 'opacity-0' : 'opacity-100'}`}>Welcome to the <i>new internet</i><br/>—one that’s powered by <i>you</i>.</h2>
         <BiChevronsDown onClick={() => setClicked(true)} size={30} className={`text-secondary absolute bottom-10 hover:scale-110 transition-all hover:cursor-pointer animate-bounce z-20 ${clicked ? 'opacity-0' : 'opacity-100'}`} />
       </div>
       
