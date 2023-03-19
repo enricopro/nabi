@@ -65,7 +65,7 @@ export default function Home() {
       return <>
         <div className="w-screen flex flex-row items-center justify-between h-16 px-5 absolute top-0 fadeIn">
           <a href="https://nabi.technology/"className="flex flex-row text-secondary w-full items-center hover:cursor-pointer">
-            <p className="md:hidden">product by</p>
+            <p>product by</p>
             <img className="ml-2 w-14" src={require("./img/logo.png")} alt="logo"/>
           </a>
           <Link to="discover" className="text-secondary mx-2 z-10">Vision</Link>

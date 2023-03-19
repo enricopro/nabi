@@ -10,14 +10,14 @@ export default function Footer() {
         <a href="https://bit.ly/3RxlxhW">
           <FaTwitter size={35} className="text-secondary mx-4 hover:text-gray-300 transition-all"/>
         </a>
-        <a href="https://nabi.blog.technology">
+        <a href="https://blog.nabi.technology">
           <FaNewspaper size={35} className="text-secondary mx-4 hover:text-gray-300 transition-all"/>
         </a>
         <a href="https://github.com/enricopro">
           <FaGithub size={35} className="text-secondary mx-4 hover:text-gray-300 transition-all"/>
         </a>
       </div>
-      <p className="text-secondary">Founded by <a href="https://twitter.com/enricosystem" className="underline">Enrico</a>, <a href="https://twitter.com/permeteo" className="underline">Permeteo</a> and <a href="https://twitter.com/pippellia" className="underline">Pippellia</a>.</p>
+      <p className="text-secondary text-center">Founded by <a href="https://twitter.com/enricosystem" className="underline">Enrico</a>, <a href="https://twitter.com/permeteo" className="underline">Permeteo</a> and <a href="https://twitter.com/pippellia" className="underline">Pippellia</a>.</p>
       <p className="text-secondary">Logo made by <a href="https://www.instagram.com/radiciannodate/" className="underline">Anna</a>.</p>
       <p className="text-secondary">Nabi Technology</p>
     </div>  
