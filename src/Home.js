@@ -18,6 +18,7 @@ export default function Home() {
   const [clicked, setClicked] = useState(false);
   const [user_email, setUserEmail] = useState('');
   const [errorInEmail, setErrorInEmail] = useState(false);
+  const [emailSubmitted, setEmailSubmitted] = useState(false);
 
   useEffect(() => {
     if(clicked) {
@@ -43,7 +44,6 @@ export default function Home() {
     //check if the string user_email is a valid email
     if(user_email.includes('@') && user_email.includes('.')) {
       const data = {"contacts": [{"email": user_email}]};
-      console.log("API KEY: " + sendgrid_apikey)
       const headers = {
         'Authorization': sendgrid_apikey,
         'Content-Type': 'application/json'
@@ -51,6 +51,7 @@ export default function Home() {
       axios.put('https://api.sendgrid.com/v3/marketing/contacts', data, { headers })
         .then(response => {
           setErrorInEmail(false);
+          setEmailSubmitted(true);
         })
         .catch(error => {
           console.error(error);
@@ -89,8 +90,9 @@ export default function Home() {
             <input type="email" onChange={(e) => onChangeEmail(e)} className={`w-60 rounded-3xl pl-6 text-secondary ${errorInEmail ? 'bg-red-100' : 'bg-gray-100'}`} placeholder="Email address" />
             <button onClick={() => subscribe()} className="rounded-3xl font-bold p-3 px-4 ml-2 text-white bg-[#5865F2] hover:bg-blue-500 transition-all">Yeah, let me know!</button>
           </div>
+          <p className={`text-secondary text-center mt-5 z-10 ${emailSubmitted ? 'opacity-100' : 'opacity-0'} transition-all`}>You have successfully submitted your email address!</p>
         </div>
-        <div className="w-11/12 max-w-[1390px] flex flex-col mx-auto z-30 md:mt-0 fadeIn">
+        <div className="w-11/12 max-w-[1390px] flex flex-col mx-auto z-30 -mt-4 md:-mt-4 fadeIn">
           <div className="w-full flex flex-row md:flex-col bg-black tracking-tighter z-30 min-h-[500px] md:h-auto justify-between md:justify-center items-stretch mt-10">
             <div className="flex flex-col items-center justify-center w-1/2 md:w-full bg-primary rounded-3xl p-10 md:p-8 md:h-auto mr-5 md:mr-auto">
               <h2 className="text-secondary text-3xl font-semibold text-center">The Broken Promise</h2>
