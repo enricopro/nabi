@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';	
 import background from './img/cubit_white_box.jpg';
 import newLogo from './img/new_logo.png';
@@ -38,11 +38,11 @@ export default function Home() {
 
   return (
     <div className="w-screen h-screen flex flex-col justify-center items-center">
-      <img src={newLogo} className="absolute h-20 z-10 top-7 left-7"/>
-      <img src={background} className='absolute top-0 ld:w-screen h-screen object-cover blur'/>
+      <img src={newLogo} className="absolute h-20 z-10 top-7 left-7" alt="nabi_logo"/>
+      <img src={background} className='absolute top-0 w-screen h-screen object-cover blur' alt="cubit"/>
       <h2 className="text-primary text-3xl px-2 ld:text-4xl text-center z-10 mb-5">Welcome to the <i>new internet</i><br/>—one that’s powered by <i>you</i>.</h2>
-      <div className="flex flex-col ld:flex-row justify-center place-content-between w-screen bottom-20 fixed px-5">
-        <a href="https://geyser.fund/project/nabitechnology" className="text-primary text-3xl text-center z-10 mb-10 ld:mr-[30%] underline">Geyser crowdfounding</a>
+      <div className="flex md:flex-col flex-row justify-center place-content-between w-screen bottom-20 fixed px-5">
+        <a href="https://geyser.fund/project/nabitechnology" className="text-primary text-3xl text-center z-10 mb-10 mr-[30%] md:mr-[0px] underline">Geyser crowdfounding</a>
         <div className="flex flex-col justify-center items-center z-10 ">
           <div className="flex flex-row justify-center">
             <input type="email" onChange={(e) => onChangeEmail(e)} className={`w-60 rounded-3xl pl-6 text-secondary ${errorInEmail ? 'bg-red-100' : 'bg-gray-100'}`} placeholder="Email address" />
