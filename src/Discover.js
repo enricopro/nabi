@@ -16,7 +16,6 @@ export default function Discover() {
     <>
       <div className="w-screen flex flex-row items-center justify-between h-16 px-5 absolute top-0 fadeIn">
         <Link to="/" className="flex flex-row text-secondary w-full items-center hover:cursor-pointer">
-          <p>product by</p>
           <img className="ml-2 w-14" src={require("./img/logo.png")} alt="logo"/>
         </Link>
         <Link to="/" className="text-secondary mx-2 z-10">Home</Link>
