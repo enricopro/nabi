@@ -40,7 +40,7 @@ export default function Home() {
     <div className="w-screen h-screen flex flex-col justify-center items-center">
       <img src={newLogo} className="absolute h-20 z-10 top-7 left-7" alt="nabi_logo"/>
       <img src={background} className='absolute top-0 w-screen h-screen object-cover blur' alt="cubit"/>
-      <h2 className="text-primary text-3xl px-2 ld:text-4xl text-center z-10 mb-5">Welcome to the <i>new internet</i><br/>—one that’s powered by <i>you</i>.</h2>
+      <h2 className="text-primary text-3xl px-2 ld:text-4xl text-center z-10 mb-8 ld:mb-5">Welcome to the <i>new internet</i><br/>—one that’s powered by <i>you</i>.</h2>
       <div className="flex md:flex-col flex-row justify-center place-content-between w-screen bottom-0 ld:bottom-20 fixed px-5">
         <a href="https://geyser.fund/project/nabitechnology" className="text-primary text-3xl text-center z-10 mb-10 mr-[30%] md:mr-[0px] underline">Geyser crowdfounding</a>
         <div className="flex flex-col justify-center items-center z-10 ">
